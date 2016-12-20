@@ -1,4 +1,4 @@
 # codeBook
 for fun, forever
 
-codes for poj. 
+codes for poj. all C++ codes.
