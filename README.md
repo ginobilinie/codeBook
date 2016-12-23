@@ -8,3 +8,5 @@ codes for poj. all C++ codes.
 2. poj2524.cpp: my solution for poj 2524. Simple application of Union Set. I memorized that time we prepared for ACM/ICPC contest. I re-learned how to implement a Union Set: makeSet, findSet, unionSet. Two keypoints: update root node along the trace path when union for a coming pair by finding operation (压缩路径); combine two subsets according to the rank (按秩合并).
 
 3. binSearch.cpp: I wrote sample codes for binary search. Remeber to finish while loop when finding the target.
+
+4. dfs.cpp: A poj problem (3050). DFS is quite commonly used. Remember the trace back after dfs. Here we donot need to use used to remember the visiting status like BFS. 
