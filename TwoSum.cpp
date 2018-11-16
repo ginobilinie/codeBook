@@ -52,6 +52,7 @@ using namespace std;
                     {
                         indX=i;
                         indY=vec[j];
+			break;
                     }
             }
             
