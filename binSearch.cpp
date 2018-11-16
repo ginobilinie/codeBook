@@ -26,7 +26,7 @@ int binSearch(int arr[N],int len, int target)
 			break;
 		}
 		else if (arr[mid]<target)
-		{
+		{j
 			left=mid+1;
 		}
 		else
