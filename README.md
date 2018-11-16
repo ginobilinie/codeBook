@@ -17,7 +17,7 @@ codes for poj. all C++ codes.
 
 7. TwoSum: brute force or hash table. Note how to use vector<type> and map<type_key, type_value>. push_back for vector, and insert(<std:pair<type_key,type_value>xxx) for map.
 
-## old
+# old
 for fun, forever
 
 codes for poj. all C++ codes.
