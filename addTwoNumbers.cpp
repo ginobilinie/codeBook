@@ -13,6 +13,8 @@ using namespace std;
  
 class Solution {
 public:
+	//这里的思路是：1.只要两个链表都有值，相加; 2.如果只有一个链表有值，只算这一个；
+	//官方答案: 只要有一个链表有值，相加(就算另外一个没值，补0相加)
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* headL1 = l1;
         ListNode* headL2 = l2;
