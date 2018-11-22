@@ -23,6 +23,8 @@ codes for poj. all C++ codes.
 
 10. media4TwoSortedArrays: I linearly combine two sorted arrays into one sorted array. But it is O(n) time. We need another solution for log(m+n).
 
+11. media4TwoSortedArrays.cpp
+
 # old
 for fun, forever
 
