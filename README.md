@@ -25,6 +25,8 @@ codes for poj. all C++ codes.
 
 11. longestPalindrome.cpp: The main point is to loop around each element: check the left-right elements around each element, and we also should consider odd/even cases.
 
+12. zigzag.cpp: inference the simple math rule. Also, pay attention to case when numRows==1.
+
 # old
 for fun, forever
 
