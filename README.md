@@ -27,6 +27,8 @@ codes for poj. all C++ codes.
 
 12. zigzag.cpp: inference the simple math rule. Also, pay attention to case when numRows==1.
 
+13. reverseNum.cpp: easy logic. However, we should know for signed integar, the range is 2^31-1 and -2^31, in C++ words, INT_MAX and INT_MIN.
+
 # old
 for fun, forever
 
