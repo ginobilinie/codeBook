@@ -31,6 +31,8 @@ codes for poj. all C++ codes.
 
 14. myatoi.cpp: easy logic. However, we should pay attention to the overflow case, and I use long long for the temporary result.
 
+15. roman2Int.cpp: easy logic. We'd better build a ordered Roman item dictionary.
+
 # old
 for fun, forever
 
