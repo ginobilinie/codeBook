@@ -37,6 +37,8 @@ codes for poj. all C++ codes.
 
 17. int2Roman.cpp: list each possible Roman basic units and form a ordered dictionary.
 
+18. longestCommonPrefix.cpp: find the shortest word, and then scan it.
+
 # old
 for fun, forever
 
