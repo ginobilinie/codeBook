@@ -33,6 +33,8 @@ codes for poj. all C++ codes.
 
 15. roman2Int.cpp: easy logic. We'd better build a ordered Roman item dictionary.
 
+16. maxArea.cpp: brute force: Directly scan through the array. A better way is to maintain two pointers from left side and right side respecitvely, and always update the lower side untile left encounter the right.
+
 # old
 for fun, forever
 
