@@ -43,6 +43,8 @@ codes for poj. all C++ codes.
 
 20. threeSumClosest.cpp: Brute force, a three-loop to solve it, but pay attention to empty cases. A faster solution O(n^3) is to fix a value, and then use two pointers (one from the left side from the just fixed value, and the other from the right side) to scan the array. Of course, we should first sort the array. If the sum is smaller than the target, which means we should enlarge the sum, so we should move left pointer to right, if the sum is larger than the target, then we should decrease the sum, which means we should move right pointer to the left.
 
+21. letterCombinations.cpp: a simple dfs. Note to consider empty input "".
+
 # old
 for fun, forever
 
