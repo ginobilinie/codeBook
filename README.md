@@ -45,6 +45,10 @@ codes for poj. all C++ codes.
 
 21. letterCombinations.cpp: a simple dfs. Note to consider empty input "".
 
+22. foursum.cpp: O(n^3) algorithm. two basic for loop, and one while (l<r) loop. std::set<vector<int>> mysets. mysets.insert(xx) which will automatically insert non-duplicate items. Also, set to vector: vec(myset.begin(),myset.end()).
+  
+ 23.
+
 # old
 for fun, forever
 
