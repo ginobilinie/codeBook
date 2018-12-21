@@ -57,6 +57,7 @@ codes for poj. all C++ codes.
 
 27. mergeKLists.cpp: use priority_queue to maintain a k-min heap (k is the number of lists), and we should learn how use priority_queue, like priority_queue<type, container, compare>. Also, we should be very careful about the pointer operation. Time complexity: nk*log(k), and space complexity: O(k)
 
+28. swapPairs.cpp: pay attention to the end condition for while loop.
 
 # old
 for fun, forever
