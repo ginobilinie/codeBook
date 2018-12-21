@@ -53,6 +53,9 @@ codes for poj. all C++ codes.
 
 25. mergeTwoLists.cpp: merge two sorted lists. When we encounter same value , we use head-in insert manner. Note to update the current pointer in progress.
 
+26. generateParenthesis.cpp: Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. The key point is to find what's the invalid cases: if closing (right) bracket is more than the openning (left) bracket, then it is invalid. Otherwise, it is valid. Based on this observation, we can simply write the codes.
+
+
 # old
 for fun, forever
 
