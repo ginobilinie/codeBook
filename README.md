@@ -51,6 +51,8 @@ codes for poj. all C++ codes.
 
 24. isValidParenthes.cpp: How to use stack, empty() function, and we also specify template. Also, we need to consider all cases, such as only left brackets or only right brackets.
 
+25. mergeTwoLists.cpp: merge two sorted lists. When we encounter same value , we use head-in insert manner. Note to update the current pointer in progress.
+
 # old
 for fun, forever
 
