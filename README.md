@@ -59,6 +59,8 @@ codes for poj. all C++ codes.
 
 28. swapPairs.cpp: pay attention to the end condition for while loop.
 
+29. reverseKGroup.cpp: this is a harder version of swap pairs. We first compute the length of the list, and seperate this list into several groups and possible remainnings, we reverse each group and connect between groups, followed by the possible remainings.
+
 # old
 for fun, forever
 
