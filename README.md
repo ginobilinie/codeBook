@@ -69,6 +69,8 @@ codes for poj. all C++ codes.
 
 33. divide.cpp: note for the overflow case. Also, this is a while-loop method and it costs too much time.
 
+34. divide_faster.cpp: same problem as 33, but much faster algorithm with left move operator. I first find the possible largest number of times that the divisor can be left move operated. Then we minus the largest left moved divisors, folled by the second largest if possible. Note for the overflow case.
+
 # old
 for fun, forever
 
