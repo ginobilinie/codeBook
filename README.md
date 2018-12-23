@@ -65,6 +65,8 @@ codes for poj. all C++ codes.
 
 31. removeElement.cpp: Note how to delete a number from a vector: vec.erase(vec.begin()+pos), and the vector size will change immediately.
 
+32. strStr.cpp: Pay attention to the "" and "" case.
+
 # old
 for fun, forever
 
