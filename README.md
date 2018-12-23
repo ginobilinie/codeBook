@@ -67,6 +67,8 @@ codes for poj. all C++ codes.
 
 32. strStr.cpp: Pay attention to the "" and "" case.
 
+33. divide.cpp: note for the overflow case. Also, this is a while-loop method and it costs too much time.
+
 # old
 for fun, forever
 
