@@ -63,6 +63,8 @@ codes for poj. all C++ codes.
 
 30. removeDuplicates.cpp: remove sth from sorted array. Note how to delete a number from a vector: vec.erase(vec.begin()+pos), and the vector size will change immediately.
 
+31. removeElement.cpp: Note how to delete a number from a vector: vec.erase(vec.begin()+pos), and the vector size will change immediately.
+
 # old
 for fun, forever
 
