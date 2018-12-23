@@ -71,6 +71,10 @@ codes for poj. all C++ codes.
 
 34. divide_faster.cpp: same problem as 33, but much faster algorithm with left move operator. I first find the possible largest number of times that the divisor can be left move operated. Then we minus the largest left moved divisors, folled by the second largest if possible. Note for the overflow case.
 
+35. repeatedNTimes.cpp: easy. We can first sort, and then check the repeat one.
+
+36. maxWidthRamp.cpp: a very good problem. We first use struct to rewrite it, and sort according to the value (of course, when value equals, we sort by index). Then we just need to find the largest gap in an array from left to right. Again, we use 贪心算法，this is a little tricky, since we have to maintain the minimum index and the largest gap when we scan the array.
+
 # old
 for fun, forever
 
