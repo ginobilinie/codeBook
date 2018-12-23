@@ -61,6 +61,8 @@ codes for poj. all C++ codes.
 
 29. reverseKGroup.cpp: this is a harder version of swap pairs. We first compute the length of the list, and seperate this list into several groups and possible remainnings, we reverse each group and connect between groups, followed by the possible remainings.
 
+30. removeDuplicates.cpp: remove sth from sorted array. Note how to delete a number from a vector: vec.erase(vec.begin()+pos);
+
 # old
 for fun, forever
 
