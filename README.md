@@ -75,6 +75,8 @@ codes for poj. all C++ codes.
 
 36. maxWidthRamp.cpp: a very good problem. We first use struct to rewrite it, and sort according to the value (of course, when value equals, we sort by index). Then we just need to find the largest gap in an array from left to right. Again, we use 贪心算法，this is a little tricky, since we have to maintain the minimum index and the largest gap when we scan the array.
 
+37. findSubstring.cpp: You are given a string, s, and a list of words, words, that are all of the same length. Find all starting indices of substring(s) in s that is a concatenation of each word in words exactly once and without any intervening characters. This is an interesting problem. I use the quite direct idea to make it. And I sort the temporary word dictionary and use binary search to find we get the current unit, and we erase the found item for the temporary word dictionary. However, this method is a little slow. 
+
 # old
 for fun, forever
 
