@@ -83,6 +83,9 @@ codes for poj. all C++ codes.
 
 40. biSearchRotatedSortedArray.cpp: The key point is to judge which part of the array is the well sorted part. And we make comparison and decision based on these well sorted part. Also, we can first biSearch the largest value, and then make a regular biSearch over the reasonable region.
 
+41. searchRange.cpp: For a sorted array, we have to find the left and right index for a given value (range). We write two biSearch functions, one biSearchLeft, and one biSearchRight: the key point is that we donot stop when we first encounter the target value. 
+
+
 # old
 for fun, forever
 
