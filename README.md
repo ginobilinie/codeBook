@@ -81,7 +81,7 @@ codes for poj. all C++ codes.
 
 39. searchInsert.cpp: Search the proper location for a insertion or the correct index for a given value for a sorted array.
 
-40. biSearchRotatedSortedArray.cpp: The key point is to judge which part of the array is the well sorted part. And we make comparison and decision based on these well sorted part. Also, we can first biSearch the largest value, and then make a regular biSearch over the half.
+40. biSearchRotatedSortedArray.cpp: The key point is to judge which part of the array is the well sorted part. And we make comparison and decision based on these well sorted part. Also, we can first biSearch the largest value, and then make a regular biSearch over the reasonable region.
 
 # old
 for fun, forever
