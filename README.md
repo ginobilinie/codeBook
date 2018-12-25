@@ -79,6 +79,8 @@ codes for poj. all C++ codes.
 
 38. nextPermutation.cpp: To find the next permutation sequence, we have to first locate the rightmost lInd so that lInd<rInd and A[lInd]<A[rInd], and then we switch. Later on, we sort the array from lInd+1 on.
 
+39. searchInsert.cpp: Search the proper location for a insertion or the correct index for a given value for a sorted array.
+
 # old
 for fun, forever
 
