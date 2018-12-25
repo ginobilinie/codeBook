@@ -85,6 +85,7 @@ codes for poj. all C++ codes.
 
 41. searchRange.cpp: For a sorted array, we have to find the left and right index for a given value (range). We write two biSearch functions, one biSearchLeft, and one biSearchRight: the key point is that we donot stop when we first encounter the target value. 
 
+42. longestValidParentheses.cpp: Note, the problem is to find the longest valid substring of parentheses. I use a vector to record where the break point should be, and I use a begin-to-end scan for the string and also use a end-to-begin scan for the string to decide where the break points should be. Note, left number of Parentheses should always be greater than that of the right side in a begin-to-end scan. After we have the break points, it is easy to do count the maximum length of the substring.
 
 # old
 for fun, forever
