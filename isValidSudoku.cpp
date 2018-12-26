@@ -6,6 +6,8 @@ public:
         for (int i=0; i<9; i++)
         {
             memset(used,0,9*sizeof(bool));
+            // for (int k=0; k<9; k++)
+            //     used[k] = 0;
             for (int j=0; j<9; j++)
             {
                 char pos = board[i][j];
@@ -20,6 +22,8 @@ public:
         for (int i=0; i<9; i++)
         {
             memset(used,0,9*sizeof(bool));
+            // for (int k=0; k<9; k++)
+            //     used[k] = 0;
             for (int j=0; j<9; j++)
             {
                 char pos = board[j][i];
@@ -31,11 +35,13 @@ public:
             }
         }
         
-        for (int i=1; i<8; i++)
+        for (int i=1; i<8; i+=3)
         {
-            for (int j=1; j<8; j++)
+            for (int j=1; j<8; j+=3)
             {
                 memset(used,0,9*sizeof(bool));
+                // for (int k=0; k<9; k++)
+                //     used[k] = 0;
                 for (int m=-1; m<2; m++)
                 {
                     for (int n=-1; n<2; n++)
