@@ -89,6 +89,8 @@ codes for poj. all C++ codes.
 
 43. isValidSudoku.cpp: Directly following the definition, and then form the algorithm to detect each possible subbox or row or column.
 
+44. solveSudoku.cpp: backtracking. A good problem to practice backtracking. 
+
 # old
 for fun, forever
 
