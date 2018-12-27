@@ -93,6 +93,8 @@ codes for poj. all C++ codes.
 
 45. countAndSay.cpp: stupid question. The nth term is a read-off based on the n-1-th term.
 
+46. combinationSum.cpp: typical dfs. Pay attention to the backtracking recovery and the usage of set (including convert to vector).
+
 # old
 for fun, forever
 
