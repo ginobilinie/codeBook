@@ -89,7 +89,7 @@ codes for poj. all C++ codes.
 
 43. isValidSudoku.cpp: Directly following the definition, and then form the algorithm to detect each possible subbox or row or column.
 
-44. solveSudoku.cpp: backtracking. A good problem to practice backtracking. Note for the end condition, also, we should pay attention to that when there is a solution, we should end the search, which means we should set a flag to stop the backtracking.
+44. solveSudoku.cpp: backtracking. A good problem to practice backtracking. Note for the end condition, also, we should pay attention to that when there is a solution, we should end the search, which means we should set a flag to stop the backtracking. We can continue to optimze the time for the validation part: we can maintain three two-dim array for checking if each value in a row/colum/box is used or not.
 
 # old
 for fun, forever
