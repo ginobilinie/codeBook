@@ -93,7 +93,10 @@ codes for poj. all C++ codes.
 
 45. countAndSay.cpp: stupid question. The nth term is a read-off based on the n-1-th term.
 
-46. combinationSum.cpp: typical dfs. Pay attention to the backtracking recovery and the usage of set (including convert to vector).
+46. combinationSum.cpp: no repeated number in the input array, but allow repeated number in each possible comibinations (which means each input number is allowed for unlimited use). typical dfs. Pay attention to the backtracking recovery and the usage of set (including convert to vector).
+
+47. combinationSum2.cpp: may contain repeated number in the input array, but each input number is only allowed for one time use. typical dfs. Pay attention to the backtracking recovery and the usage of set (including convert to vector). The difference from 46 is the currInd.
+
 
 # old
 for fun, forever
