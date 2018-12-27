@@ -91,6 +91,8 @@ codes for poj. all C++ codes.
 
 44. solveSudoku.cpp: backtracking. A good problem to practice backtracking. Note for the end condition, also, we should pay attention to that when there is a solution, we should end the search, which means we should set a flag to stop the backtracking. We can continue to optimze the time for the validation part: we can maintain three two-dim array for checking if each value in a row/colum/box is used or not.
 
+45. countAndSay.cpp: stupid question. The nth term is a read-off based on the n-1-th term.
+
 # old
 for fun, forever
 
