@@ -1,23 +1,11 @@
+//tle v1
 class Solution {
+
 public:
     int trap(vector<int>& height) {
         int sz = height.size();
         int res = 0, currHeight=0;
-        // for (int i=0; i<sz; i++)
-        // {
-        //     if (currHeight<height[i])
-        //         currHeight = height[i];
-        //     else
-        //         continue;
-        //     int possSum = 0,k; 
-        //     for (k=sz-1; k>i; k--)
-        //     {
-        //         if (height[k]>currHeight)
-        //             break;
-        //     }       
-        //     if (k==i)
-        // }
-        
+
         int firstPosGreaterThanCurrMin;//first position larger than the current min
         int lastPosGreaterThanCurrMin;//last position larger than the current min
         int currMin, minVal=INT_MAX, maxVal=-1;
@@ -57,8 +45,67 @@ public:
     }
 };
 
+//tle v2
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        int sz = height.size();
+        if (height.empty())
+            return 0;
+        int res = 0, currHeight=0;
+        set<int> myset;
+        
+        vector<int> tmp = height;
+        sort(tmp.begin(),tmp.end());
+        
+        for (int i=0; i<sz; i++)
+            myset.insert(tmp[i]);// the set is sorted from smaller valut to large value
+        
+        
+        int firstPosGreaterThanCurrMin;//first position larger than the current min
+        int lastPosGreaterThanCurrMin;//last position larger than the current min
+        int currMin, nextMin, minVal=INT_MAX, maxVal=-1;
+
+        set<int>:: iterator it, tmpIt;
+        for (it=myset.begin(); it!=myset.end();)
+        {
+            currMin = *it;
+            firstPosGreaterThanCurrMin = -1;
+            lastPosGreaterThanCurrMin = -1;
+            for (int i=0; i<sz; i++)
+                if (height[i]>currMin)
+                {
+                    if (firstPosGreaterThanCurrMin==-1)
+                        firstPosGreaterThanCurrMin = i;
+                    lastPosGreaterThanCurrMin = i;
+                }
+            if (firstPosGreaterThanCurrMin==-1)
+                break;;
+            if (firstPosGreaterThanCurrMin==lastPosGreaterThanCurrMin)
+                break;
+            it++;
+            if (it!=myset.end())
+            {
+                nextMin = *it;
+                for (int k=firstPosGreaterThanCurrMin; k<lastPosGreaterThanCurrMin; k++)
+                {
+                    if (height[k]==currMin)
+                    {
+
+                        height[k] = nextMin;
+                        res = res + nextMin - currMin;  
+                    }
+
+                }
+                currMin = nextMin;
+            }
+        }
+        return res;
+    }
+};
 
 
+//not finihsed version.
 class Solution {
 public:
     struct unit
