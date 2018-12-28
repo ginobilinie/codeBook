@@ -40,7 +40,9 @@ public:
                     lastPosGreaterThanCurrMin = i;
                 }
             if (firstPosGreaterThanCurrMin==-1)
-                continue;
+                break;;
+            if (firstPosGreaterThanCurrMin==lastPosGreaterThanCurrMin)
+                break;
             for (int k=firstPosGreaterThanCurrMin; k<lastPosGreaterThanCurrMin; k++)
             {
                 if (height[k]==currMin)
