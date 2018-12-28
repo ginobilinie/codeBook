@@ -101,7 +101,10 @@ codes for poj. all C++ codes.
 
 49. firstMissingPositive.cpp: This is a typical question about how to use index to flag some value has visited or not. Usually, we can open an extra array used[maxVal] to denote whether which values have been visited. However, the maxVal can be huge, so we can only care about the ones we want to care about (here means we use a map). While for this problem, we are only allowed to use constant extra space, thus, we take advantage of the input array itself. The key points are: shift non-positive values to the left, and we begin from the first positive value; we set the visited value, like 3, nums[3-1] = - nums[3-1] (if nums[3-1] is original positive), this design is critical, because we can still consider nums[3-1] in later encounter by using a abs function. 
 
-50. trapTheRain.cpp: a TLE solution: we increase the valid minimum by 1 each time.
+50. trapTheRain.cpp: a TLE solution: we increase the valid minimum by 1 each time, or a evolutionary one: we increase the minimum by to a second minimum each time. This algorithm takes about O(n^2) time.
+
+51. trapTheRain_faster.cpp: We first find the max value and the index for this max value. We go from left and right. From left side, we start from a current point (e.g., index 0), if the next point's value is smaller than the current point, we use the current point's value-next point's value to increase the trap rain, and then we forward the next pointer till we encounter an next pointer whose value is larger than the current value, and we set the current value to such next pointer and go on... This algorithm takes about O(n) time complexity.
+
 # old
 for fun, forever
 
