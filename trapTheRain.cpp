@@ -56,3 +56,51 @@ public:
         return res;
     }
 };
+
+
+
+class Solution {
+public:
+    struct unit
+    {
+        int index;
+        int val;
+    };
+    bool comp(struct unit& u1, struct unit& u2)
+    {
+        if (u1.val==u2.val)
+            return u1.index<u2.index;
+        return u1.val<u2.val;
+    }
+    int trap(vector<int>& height) {
+        if (height.empty())
+            return 0;
+        int sz = height.size();
+        vector<struct unit> myvec;
+        struct unit myunit;
+        for (int i=0; i<sz; i++)
+        {
+            myunit.index = i;
+            myunit.val = height[i];
+            myvec.push_back(myunit);
+        }
+        sort(myvec.begin(),myvec.end(),cmp);
+        
+        int currMinVal = myvec[0].val;
+        int currMinInd = myvec[0].ind;
+        int nextMinVal, nextMinInd;
+        for (int i=1; i<sz; i++)
+        {
+            if (myvec[i].val==currMaxVal)
+            {
+                continue;
+            }
+            else
+            {
+                nextMaxVal = myvec[i].val;
+            }
+        }
+        
+        return res;
+    }
+};
