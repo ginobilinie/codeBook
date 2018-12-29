@@ -105,6 +105,8 @@ codes for poj. all C++ codes.
 
 51. trapTheRain_faster.cpp: We first find the max value and the index for this max value. We go from left and right. From left side, we start from a current point (e.g., index 0), if the next point's value is smaller than the current point, we use the current point's value-next point's value to increase the trap rain, and then we forward the next pointer till we encounter an next pointer whose value is larger than the current value, and we set the current value to such next pointer and go on... This algorithm takes about O(n) time complexity.
 
+52. wildcardMatching.cpp: a failure solution using while loop to scan it.
+
 # old
 for fun, forever
 
