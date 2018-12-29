@@ -107,9 +107,11 @@ codes for poj. all C++ codes.
 
 52. wildcardMatching.cpp: a failure solution using while loop to scan it.
 
-53. permute.cpp: typical dfs for permutation. Note to use used array to check if this value has been used or not. Also, for vector, avoid using erase as much as possible, instead, we can use a tmp to remember the previous status for later recovery. Actually, we can use pop_back to pop the last element from the vector.
+53. permute.cpp: distinct input integers. typical dfs for permutation. Note to use used array to check if this value has been used or not. Also, for vector, avoid using erase as much as possible, instead, we can use a tmp to remember the previous status for later recovery. Actually, we can use pop_back to pop the last element from the vector.
 
-54. permuteUnique.cpp: use set to avoid the repeated cases.
+54. permuteUnique.cpp: input integars may contain duplicate numbers. 1. we use set to avoid the repeated cases, however, it is slow.
+
+55. permuteUnique_faster.cpp: input integars may contain duplicate numbers. We first sort the input array. And then we use a simple while loop to find next distinct number (note this while loop should placed in the end of the for loop, since we should consider the repeated numbers before we begin with this repeated number) and we consider from it for next iterations.
 
 # old
 for fun, forever
