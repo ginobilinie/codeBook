@@ -109,6 +109,8 @@ codes for poj. all C++ codes.
 
 53. permute.cpp: typical dfs for permutation. Note to use used array to check if this value has been used or not. Also, for vector, avoid using erase as much as possible, instead, we can use a tmp to remember the previous status for later recovery.
 
+54. permuteUnique.cpp: use set to avoid the repeated cases.
+
 # old
 for fun, forever
 
