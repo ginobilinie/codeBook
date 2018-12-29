@@ -36,11 +36,12 @@ public:
             if (!used[i])
             {
                 used[i] = 1;
-                tmp = currNums;
+                //tmp = currNums;
                 currNums.push_back(nums[i]);
                 dfs(nums, currNums);
                 used[i] = 0;
-                currNums = tmp;
+                //currNums = tmp;// we can currNums.pop_back
+                currNums.pop_back;
                 // currNums.erase(currNums.end());
             }
         }
