@@ -117,6 +117,10 @@ codes for poj. all C++ codes.
 
 57. spellchecker.cpp: a interesting problem. Use three map to cover all cases. Most importantly, to deal with certain general match of a string, like 'a', 'o', 'i', 'e', 'u', we can use '?' to replace these letters in dictionaries and the queries.
 
+58. numsSameConsecDiff.cpp: a simple dfs, with considering the boundary conditions.
+
+59.
+
 # old
 for fun, forever
 
