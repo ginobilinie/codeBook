@@ -115,6 +115,8 @@ codes for poj. all C++ codes.
 
 56. rotateImage.cpp: rotate a image by 90 degree in a clockwise manner. We have to change the corresponding 4 related locations at the same time. Also, pay attention to the for loop conditions.
 
+57. spellchecker.cpp: a interesting problem. Use three map to cover all cases. Most importantly, to deal with certain general match of a string, like 'a', 'o', 'i', 'e', 'u', we can use '?' to replace these letters in dictionaries and the queries.
+
 # old
 for fun, forever
 
