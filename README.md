@@ -113,6 +113,8 @@ codes for poj. all C++ codes.
 
 55. permuteUnique_faster.cpp: input integars may contain duplicate numbers. We first sort the input array. And then we use a simple while loop to find next distinct number (note this while loop should placed in the end of the for loop, since we should consider the repeated numbers before we begin with this repeated number) and we consider from it for next iterations.
 
+56. rotateImage.cpp: rotate a image by 90 degree in a clockwise manner. We have to change the corresponding 4 related locations at the same time. Also, pay attention to the for loop conditions.
+
 # old
 for fun, forever
 
