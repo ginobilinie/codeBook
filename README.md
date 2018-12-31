@@ -121,7 +121,7 @@ codes for poj. all C++ codes.
 
 59. isSameValueTree.cpp: a simple traverse algorithm.
 
-60. minCameraCover.cpp:
+60. minCameraCover.cpp: Given a binary tree, we install cameras on the nodes of the tree. Each camera at a node can monitor its parent, itself, and its immediate children. Calculate the minimum number of cameras needed to monitor all nodes of the tree. Proposed solution is defining three statused for a current node (not covered, no needed to be covered and has covered). And we design a preorder traverse with greedy algorithm: if left and right child nodes are both not covered, then we set camera for the current node; if one of left or right childe nodes has been covered, then we donot neede camera for the current node; otherwise, there is no camera (for leaf nodes). 
 
 # old
 for fun, forever
