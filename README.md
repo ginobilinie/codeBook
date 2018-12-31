@@ -125,6 +125,8 @@ codes for poj. all C++ codes.
 
 61. groupAnagrams.cpp: use map and convert map to vector in final step.
 
+62. myPow.cpp: simple Divide-and-Conquer algorithm. Note to take advantage of the computed value as much as possible. O(logn). Note the 0 cases.
+
 # old
 for fun, forever
 
