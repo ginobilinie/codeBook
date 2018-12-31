@@ -1,4 +1,6 @@
-  vector<vector<bool>> used;
+class Solution {
+public:
+    vector<vector<bool>> used;
     vector<vector<string>> res;
     vector<vector<string>> solveNQueens(int n) {
         for (int i=0; i<n; i++)
@@ -28,7 +30,7 @@
                     if (used[i][j])
                     {
                         str = str+"Q";
-                        used[i][j] = 0;
+                        // used[i][j] = 0;
                     }
                     else
                     {
@@ -64,13 +66,35 @@
             if (used[i][col])
                 return false;
         }
-        if (row==col)
+        
+        int r = row, c = col;
+        while (--r>-1&&++c<n)
         {
-            for (int i=0; i!=row&&i<n; i++)  
-            {
-                if (used[i][i])
-                    return false;
-            }
+            if (used[r][c])
+                return false;
+        }
+        r = row;
+        c = col;
+        while (++r<n&&--c>-1)
+        {
+            if (used[r][c])
+                return false;
+        }
+        r = row;
+        c = col;
+        while (--r>-1&&--c>-1)
+        {
+            if (used[r][c])
+                return false;
+        }
+        r = row;
+        c = col;
+        while (++r<n&&++c<n)
+        {
+            if (used[r][c])
+                return false;
         }
         return true;
     }
+    
+};
