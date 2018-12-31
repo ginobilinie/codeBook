@@ -121,6 +121,8 @@ codes for poj. all C++ codes.
 
 59. isSameValueTree.cpp: a simple traverse algorithm.
 
+60. minCameraCover.cpp:
+
 # old
 for fun, forever
 
