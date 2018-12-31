@@ -129,8 +129,9 @@ codes for poj. all C++ codes.
 
 63. maxSubArray.cpp: simple dp algorithm: just consider the previous node's value.
 
-64. solveNQueens.cpp: solve n queens. Typical backtracking or dfs. Pay attention to correctly understand the rule of N queens.
+64. solveNQueens.cpp: solve n queens. Typical backtracking or dfs. Pay attention to correctly understand the rule of N queens. Note we should only check the has been visited regions to save time.
 
+65. totalNQueens.cpp: same as 64. We even donot need to return the exact solutions but the number of solutions.
 # old
 for fun, forever
 
