@@ -127,6 +127,8 @@ codes for poj. all C++ codes.
 
 62. myPow.cpp: simple Divide-and-Conquer algorithm. Note to take advantage of the computed value as much as possible. O(logn). Note the 0 cases.
 
+63. maxSubArray.cpp: simple dp algorithm: just consider the previous node's value.
+
 # old
 for fun, forever
 
