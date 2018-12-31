@@ -129,6 +129,8 @@ codes for poj. all C++ codes.
 
 63. maxSubArray.cpp: simple dp algorithm: just consider the previous node's value.
 
+64. solveNQueens.cpp: solve n queens.
+
 # old
 for fun, forever
 
