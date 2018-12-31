@@ -54,14 +54,14 @@ public:
         }
     }
     
-    bool checkPuzzle(int row, int col, int n)
+  bool checkPuzzle(int row, int col, int n)
     {
-        for (int i=0; i!=col&&i<n; i++)
+        for (int i=0; i<col; i++)
         {
             if (used[row][i])
                 return false;
         }
-        for (int i=0; i!=row&&i<n; i++)
+        for (int i=0; i<row; i++)
         {
             if (used[i][col])
                 return false;
@@ -73,13 +73,13 @@ public:
             if (used[r][c])
                 return false;
         }
-        r = row;
-        c = col;
-        while (++r<n&&--c>-1)
-        {
-            if (used[r][c])
-                return false;
-        }
+        // r = row;
+        // c = col;
+        // while (++r<n&&--c>-1)
+        // {
+        //     if (used[r][c])
+        //         return false;
+        // }
         r = row;
         c = col;
         while (--r>-1&&--c>-1)
@@ -87,14 +87,13 @@ public:
             if (used[r][c])
                 return false;
         }
-        r = row;
-        c = col;
-        while (++r<n&&++c<n)
-        {
-            if (used[r][c])
-                return false;
-        }
+        // r = row;
+        // c = col;
+        // while (++r<n&&++c<n)
+        // {
+        //     if (used[r][c])
+        //         return false;
+        // }
         return true;
     }
-    
 };
