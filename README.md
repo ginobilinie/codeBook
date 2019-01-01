@@ -132,6 +132,9 @@ codes for poj. all C++ codes.
 64. solveNQueens.cpp: solve n queens. Typical backtracking or dfs. Pay attention to correctly understand the rule of N queens. Note we should only check the has been visited regions to save time.
 
 65. totalNQueens.cpp: same as 64. We even donot need to return the exact solutions but the number of solutions.
+
+66. spiralOrder.cpp: define the left, right, top and down for convenience. 
+
 # old
 for fun, forever
 
