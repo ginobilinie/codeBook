@@ -135,6 +135,10 @@ codes for poj. all C++ codes.
 
 66. spiralOrder.cpp: define the left, right, top and down for convenience. 
 
+67. canJump.cpp: a dfs algorithm, but TLE.
+
+68. canJump_faster.cpp: linear algorithm. Use a currMaxReachInd to indicate the maxmimum reachable index for the current visit index. Pay attention to that if the currMaxReachInd is smaller than the current visit index, we should break the scan.
+
 # old
 for fun, forever
 
