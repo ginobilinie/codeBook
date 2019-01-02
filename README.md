@@ -139,6 +139,8 @@ codes for poj. all C++ codes.
 
 68. canJump_faster.cpp: linear algorithm. Use a currMaxReachInd to indicate the maxmimum reachable index for the current visit index. Pay attention to that if the currMaxReachInd is smaller than the current visit index, we should break the scan.
 
+69. mergeInterval.cpp: first sort the intervals. And then combine them if necessary. 
+
 # old
 for fun, forever
 
