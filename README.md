@@ -143,6 +143,8 @@ codes for poj. all C++ codes.
 
 70. insertIntervals.cpp: we can first insert and then merge.
 
+71. lengthOfLastWord.cpp: pay attention to unusual case: spaces in the end of the string.
+
 # old
 for fun, forever
 
