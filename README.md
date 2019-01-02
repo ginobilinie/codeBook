@@ -141,6 +141,8 @@ codes for poj. all C++ codes.
 
 69. mergeInterval.cpp: first sort the intervals. And then combine them if necessary. 
 
+70. insertIntervals.cpp: we can first insert and then merge.
+
 # old
 for fun, forever
 
