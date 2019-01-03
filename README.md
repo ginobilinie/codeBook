@@ -151,6 +151,8 @@ codes for poj. all C++ codes.
 
 74. getPermutation_faster.cpp: using simple analysis to decide the value for each position one by one.
 
+75. rotateRightList.cpp: simple Linked list operation. Seperate it to two parts and then reorganize the list.
+
 # old
 for fun, forever
 
