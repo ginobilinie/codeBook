@@ -145,6 +145,8 @@ codes for poj. all C++ codes.
 
 71. lengthOfLastWord.cpp: pay attention to unusual case: spaces in the end of the string.
 
+72. generateMatrix.cpp: generate a matrix which follows a spiral way.
+
 # old
 for fun, forever
 
