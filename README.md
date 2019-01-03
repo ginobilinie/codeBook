@@ -147,6 +147,8 @@ codes for poj. all C++ codes.
 
 72. generateMatrix.cpp: generate a matrix which follows a spiral way.
 
+73. getKthPermutation.cpp: given n, get the k-th permutation sequence. In this copy, I write a simple dfs to solve it. However, it is very slow.
+
 # old
 for fun, forever
 
