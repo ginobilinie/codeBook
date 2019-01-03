@@ -149,6 +149,8 @@ codes for poj. all C++ codes.
 
 73. getKthPermutation.cpp: given n, get the k-th permutation sequence. In this copy, I write a simple dfs to solve it. However, it is very slow.
 
+74. getPermutation_faster.cpp: using simple analysis to decide the value for each position one by one.
+
 # old
 for fun, forever
 
