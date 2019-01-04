@@ -159,6 +159,8 @@ codes for poj. all C++ codes.
 
 78. minPathSum.cpp: two dimension DP. Actually, we can further use one-dim dp, but also with O(n^2) time complexity.
 
+79. plusOne.cpp: simple array based number process.
+
 # old
 for fun, forever
 
