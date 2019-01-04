@@ -157,6 +157,8 @@ codes for poj. all C++ codes.
 
 77. uniquePathsWithObstacles.cpp: when we encounter the obstacles, we set the dp[i][j]=0, pay attention to the first row or first column if the obstacle appears.
 
+78. minPathSum.cpp: two dimension DP. Actually, we can further use one-dim dp, but also with O(n^2) time complexity.
+
 # old
 for fun, forever
 
