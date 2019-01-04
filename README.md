@@ -161,6 +161,8 @@ codes for poj. all C++ codes.
 
 79. plusOne.cpp: simple array based number process.
 
+80. addBinary.cpp: binary bits addition.
+
 # old
 for fun, forever
 
