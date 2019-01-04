@@ -154,6 +154,9 @@ codes for poj. all C++ codes.
 75. rotateRightList.cpp: simple Linked list operation. Seperate it to two parts and then reorganize the list.
 
 76. uniquePaths.cpp: actually the possible ways is C(m+n-2,m-1). Then we just need to compute the combination number. Also, we can also use a DP to do it.
+
+77. uniquePathsWithObstacles.cpp: when we encounter the obstacles, we set the dp[i][j]=0, pay attention to the first row or first column if the obstacle appears.
+
 # old
 for fun, forever
 
