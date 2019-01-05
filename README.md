@@ -163,6 +163,8 @@ codes for poj. all C++ codes.
 
 80. addBinary.cpp: binary bits addition.
 
+81. mySqrt.cpp: newton iteration methods to solve the equation: f(x) = x^2 - a = 0; x1 = x0 - f(x0)/df(x0)
+
 # old
 for fun, forever
 
