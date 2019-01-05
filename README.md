@@ -175,6 +175,9 @@ codes for poj. all C++ codes.
 
 86. minEditDistance.cpp: the minimum edit distance. We use a two-dim dp array, dp[i][j] means the minimum edit distance from word1[0...i] to word2[0...j]. The state transfer equation: if (word1[i]==word2[j]) dp[i][j] = dp[i-1][j-1] else dp[i][j] = min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1]) + 1. For initialization, we consider dp[0][i] and dp[i][0].
 
+87. setZeroes.cpp: Set an identifier. Howerver, this solution has a chance to fail. We can also set a row[] and col[] to record the zero places, but it will cost O(n) space complexity. A better solution: I find the last row which has 0, and use it to store the 0-collumns.
+Then go row by row set them to 0. Then go column by column set them to 0. Finally set the last row which has 0. It's long but hey it's O(1).
+
 # old
 for fun, forever
 
