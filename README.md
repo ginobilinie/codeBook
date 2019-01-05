@@ -165,6 +165,8 @@ codes for poj. all C++ codes.
 
 81. mySqrt.cpp: newton iteration methods to solve the equation: f(x) = x^2 - a = 0; x1 = x0 - f(x0)/df(x0)
 
+82. mySqrt_biSearch.cpp: binary search, use x/mid vs mid.
+
 # old
 for fun, forever
 
