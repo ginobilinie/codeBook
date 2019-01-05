@@ -178,6 +178,8 @@ codes for poj. all C++ codes.
 87. setZeroes.cpp: Set an identifier. Howerver, this solution has a chance to fail. We can also set a row[] and col[] to record the zero places, but it will cost O(n) space complexity. A better solution (setZeroes_better.cpp): I find the last row which has 0, and use it to store the 0-collumns.
 Then go row by row set them to 0. Then go column by column set them to 0. Finally set the last row which has 0. It's long but hey it's O(1).
 
+88. searchMatrix.cpp: 2D binary search. Using 1D idea to do it, and we convert mid to row,col pair at each time.
+
 # old
 for fun, forever
 
