@@ -171,6 +171,8 @@ codes for poj. all C++ codes.
 
 84. simplifyPath.cpp: string process for the file path.
 
+85. minPathSum_linearSpace.cpp: dp[i] means the min path sum for the ith column of the current's row.
+
 # old
 for fun, forever
 
