@@ -167,6 +167,8 @@ codes for poj. all C++ codes.
 
 82. mySqrt_biSearch.cpp: binary search, use x/mid vs mid.
 
+83. climbStairs.cpp: Fibonacci sequence.
+
 # old
 for fun, forever
 
