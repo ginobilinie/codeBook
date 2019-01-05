@@ -173,6 +173,8 @@ codes for poj. all C++ codes.
 
 85. minPathSum_linearSpace.cpp: dp[i] means the min path sum for the ith column of the current's row.
 
+86. minEditDistance.cpp: the minimum edit distance. We use a two-dim dp array, dp[i][j] means the minimum edit distance from word1[0...i] to word2[0...j]. The state transfer equation: if (word1[i]==word2[j]) dp[i][j] = dp[i-1][j-1] else dp[i][j] = min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1]) + 1. For initialization, we consider dp[0][i] and dp[i][0].
+
 # old
 for fun, forever
 
