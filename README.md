@@ -169,6 +169,8 @@ codes for poj. all C++ codes.
 
 83. climbStairs.cpp: Fibonacci sequence.
 
+84. simplifyPath.cpp: string process for the file path.
+
 # old
 for fun, forever
 
