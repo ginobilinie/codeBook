@@ -1,19 +1,23 @@
 class Solution {
 public:
-    void sortColors_onepass(vector<int>& nums) {
+    void sortColors(vector<int>& nums) {
         if (nums.empty())
             return;
         int sz = nums.size();
         int l=0, r=sz-1, anchor=0;//anchor means the current focus point
         
         int tmp;
-        while (l<r && anchor<r)
+        while (l<=r && anchor<=r)
         {
-              if (nums[anchor]==0 && anchor!=l)
+              if (nums[anchor]==0)
               {
-                  tmp = nums[anchor];
-                  nums[anchor] = nums[l];
-                  nums[l] = tmp;
+                  if (anchor!=l)
+                  {
+                    tmp = nums[anchor];
+                    nums[anchor] = nums[l];
+                    nums[l] = tmp;                     
+                  }
+
                   l++;
                   anchor++;
               }
@@ -27,7 +31,7 @@ public:
                 nums[anchor] = nums[r];
                 nums[r] = tmp;
                 r--;
-                //anchor++;
+                // anchor++;//since you cannot make sure that the current anchor's value is 0
             }
         }
             
