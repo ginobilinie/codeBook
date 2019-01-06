@@ -180,6 +180,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 88. searchMatrix.cpp: 2D binary search. Using 1D idea to do it, and we convert mid to row,col pair at each time.
 
+89. sortColors.cpp: use two pass for loop. I'll further write a one-pass for-loop.
+
 # old
 for fun, forever
 
