@@ -190,6 +190,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 93. subsets.cpp: simple combination problem: to print all the subsets of a given integer array. No used array needs to be used.
 
+94. exist.cpp: to check if a board exist a given word. Simple dfs. If they say the basic unit (like digit/character) cannot be used twice, then we should better use used array. 
+
 # old
 for fun, forever
 
