@@ -188,6 +188,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 92. combine.cpp: we write a dfs to produce the combination nums. If it is <b>combination</b> data, then we donot need used array. If it is <b>permutation</b>, then we should better use used array to indicate which value has been used.
 
+93. subsets.cpp: simple combination problem: to print all the subsets of a given integer array. No used array needs to be used.
+
 # old
 for fun, forever
 
