@@ -194,7 +194,7 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 95. removeDuplicates_v2.cpp: Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length. From end to front with using vector.erase.
 
-96. biSearchRotate.cpp
+96. biSearchRotate.cpp: Compare with the biSearchRotatedSortedArray.cpp (40), the key point here is that we have duplicates in the array, especially the cases the duplicates appear in the start and end side, we should first process one side, then we can really decide which part is the increasing part. When we have processed the duplicates issues, we can then easily judge if left is ordered part or right side is ordered part, after ordered part is determined, we can then further judge where the target is located.
 
 # old
 for fun, forever
