@@ -186,6 +186,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 91. isRationalEqual.cpp: to judge if two given rational number (youlishu) is equal or not. A very complex string process. Stupid!!! Note: 1. double's precision is far less than enough (e.g., double a = 99.99, actually, in memory, it may store as 99.99999.." 2. 1.9(9) is equal to 2.0....
 
+92. combine.cpp: we write a dfs to produce the combination nums. If it is <b>combination</b> data, then we donot need used array. If it is <b>permutation</b>, then we should better use used array to indicate which value has been used.
+
 # old
 for fun, forever
 
