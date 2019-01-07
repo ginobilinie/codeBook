@@ -192,6 +192,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 94. exist.cpp: to check if a board exist a given word. Simple dfs. If they say the basic unit (like digit/character) cannot be used twice, then we should better use used array. 
 
+95. removeDuplicates_v2.cpp: Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length. From end to front with using vector.erase
+
 # old
 for fun, forever
 
