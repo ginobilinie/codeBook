@@ -208,6 +208,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 102. maximalRectangle.cpp: Here we write a simple O(n^3) method by recording each row's consecutive 1s. And we compute row by row, I mean, when we deal with one row, we should take care of rows before this row, which is, the number of colums to have all 1s till this colums across prevRows to this current row, then the area should be (currRow-prevRow+1)*minConsecutiveColumns.
 
+103. partitionLinkedList.cpp: use two pointers to maintain two sub linked list with tail insert, and we combine them together in the final step.
+
 # old
 for fun, forever
 
