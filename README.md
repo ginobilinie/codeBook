@@ -204,6 +204,10 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 100. largestRectangleArea_v1.cpp: problem same as 99 (leetcode84). use stack to solve this kind of problem is great. However, this method is quite tricky, though its complexity is O(n). Need understand more.
 
+101. maximalRectangle_failure_dp.cpp: a failure dp for maximual rectangle problem.
+
+102. maximalRectangle.cpp: Here we write a simple O(n^3) method by recording each row's consecutive 1s. And we compute row by row, I mean, when we deal with one row, we should take care of rows before this row.
+
 # old
 for fun, forever
 
