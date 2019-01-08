@@ -200,6 +200,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 98. deleteDuplicates_v1.cpp: a easier problem for 97.
 
+99. largestRectangleArea.cpp: use two for loop to brute force compute the maximum value.
+
 # old
 for fun, forever
 
