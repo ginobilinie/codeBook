@@ -202,6 +202,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 99. largestRectangleArea.cpp: use two for loop to brute force compute the maximum value.
 
+100. largestRectangleArea_v1.cpp: problem same as 99 (leetcode84). use stack to solve this kind of problem is great. However, this method is quite tricky, though its complexity is O(n). Need understand more.
+
 # old
 for fun, forever
 
