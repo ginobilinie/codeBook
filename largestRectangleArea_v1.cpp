@@ -1,50 +1,5 @@
-#include<iostream>
-#include<vector>
-#include<string>
-#include<stack>
-#include<cmath>
-using namespace std;
-
-int largestRectangleArea1(vector<int> heights) {
-        stack<int> mystack;
-        int maxVal = 0, rightIndex = 0;
-        while(rightIndex < heights.size()) 
-        {
-            // All new bars are seen as potential right bar
-            int rightHeight = heights[rightIndex]; 
-            // Only increment rightIndex, when pushed
-            //find the first decreased item, and we then compute the height among bars before this first decreased item 
-            if (mystack.empty() || heights[mystack.top()] < rightHeight) 
-            {
-                mystack.push(rightIndex++); 
-                //rightHeight = heights[rightIndex];
-            }
-            else
-            {     
-                // Be careful that stack only store index, we still need heights[index] to get height
-                int curHeight = heights[mystack.top()];
-                mystack.pop();
-                // Be careful of case of no left bar
-                int leftIndex = mystack.empty() ? -1 : mystack.top();  
-                int tmp = (rightIndex - leftIndex - 1) * curHeight;
-                if (tmp>maxVal)
-                    maxVal = tmp;
-            }                  
-        }
-        while(!mystack.empty())
-        {
-            int curHeight = heights[mystack.top()]; 
-            mystack.pop();
-            int leftIndex = mystack.empty() ? -1 : mystack.top(); 
-            // here rightIndex == heights.length
-            int tmp = (rightIndex - leftIndex - 1) * curHeight;
-            if (tmp>maxVal)
-                maxVal = tmp;
-        }
-        return maxVal;
-    }
-
-
+class Solution {
+public:
 int largestRectangleArea(vector<int> heights) {
         if (heights.empty())
             return 0;
@@ -68,15 +23,18 @@ int largestRectangleArea(vector<int> heights) {
             //we can compute the area and record the maximum value
 	
 			if (currInd==sz)
-				break;
-			barVal = heights[currInd];
+				barVal = heights[currInd-1];
+			else
+				barVal = heights[currInd];
             while (!s.empty()&&heights[s.top()]>=barVal)
             {
                 leftInd = s.top();
                 leftHeight = heights[leftInd];
                 s.pop();
-                //now we can compute the area between the leftInd (inclusive) to the currInd (exclusive)
-				width = currInd -leftInd;
+                //now we can compute the area between the s.top() (exclusive) to the currInd (exclusive)
+                //it is very important to realize it is s.top() instead of leftInd here, since the intermedia values 
+                //have the same value in default in the stack
+				width = currInd - (s.empty()?-1:s.top())-1;
                 int tmp = width*leftHeight;
                 if (tmp>maxVal)
                     maxVal = tmp;
@@ -91,8 +49,8 @@ int largestRectangleArea(vector<int> heights) {
             leftInd = s.top();
             leftHeight = heights[leftInd];
             s.pop();
-            //now we can compute the area between the leftInd (inclusive) to the currInd (exclusive)
-            int width = currInd -leftInd;
+            //now we can compute the area between the s.top (exclusive) to the currInd (exclusive)
+            int width = currInd - (s.empty()?-1:s.top())-1;
             int tmp = width*leftHeight;
             if (tmp>maxVal)
                 maxVal = tmp;
@@ -100,21 +58,4 @@ int largestRectangleArea(vector<int> heights) {
         
         return maxVal;
     }
-
-
-int main()
-{
-	string s = "1.89(9)";
-	string t = "1.90";
-	vector<int> data(6,0);
-	data[0]=2;
-	data[1]=1;
-	data[2]=3;
-	data[3]=2;
-	data[4]=2;
-	data[5]=3;
-	
-	largestRectangleArea1(data);
-	cout<<"test"<<endl;
-	return 0;
-}
+};
