@@ -196,6 +196,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 96. biSearchRotate.cpp: Compare with the biSearchRotatedSortedArray.cpp (40), the key point here is that we have duplicates in the array, especially the cases the duplicates appear in the start and end side, we should first process one side, then we can really decide which part is the increasing part. When we have processed the duplicates issues, we can then easily judge if left is ordered part or right side is ordered part, after ordered part is determined, we can then further judge where the target is located.
 
+97. deleteDuplicates_v2.cpp: use three pointers to do it. Pay extra attention to the head duplicated cases.
+
 # old
 for fun, forever
 
