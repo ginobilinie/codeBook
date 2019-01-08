@@ -198,6 +198,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 97. deleteDuplicates_v2.cpp: use three pointers to do it. Pay extra attention to the head duplicated cases.
 
+98. deleteDuplicates_v1.cpp: a easier problem for 97.
+
 # old
 for fun, forever
 
