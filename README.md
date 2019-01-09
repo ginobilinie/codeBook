@@ -214,6 +214,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 105. mergeSortedArray.cpp: a stupid problem. The idea is easy: maintain two pointers to merge the two arrays. Pay attention to corner keys that the first array is empty. I'm now still quite understanding: why vec.insert(vec.begin(),10) can fail...
 
+106. grayCode.cpp: bit operation. Find some basic law, and use bit operation to left move. x<<=1, x= x<<1;
+
 # old
 for fun, forever
 
