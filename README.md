@@ -218,6 +218,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 107. subsetsWithDup.cpp: This is a typical question about dfs with duplicate cases. In each dfs level, we need to use a while loop to eliminate the remaining duplicates after this dfs level, since we donot like to waste dfs with duplicate begainings.
 
+108. numDecodings.cpp: A dp problem: to check if the s[i] can be combined with s[i-1] or not, and it can form a danymic status equation. However, we should pay attention to 0, without the '0' included corner case, this is a ordinary medium problem.
+
 # old
 for fun, forever
 
