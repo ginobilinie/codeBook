@@ -210,6 +210,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 103. partitionLinkedList.cpp: use two pointers to maintain two sub linked list with tail insert, and we combine them together in the final step.
 
+104. isScramble.cpp (leetcode87): A very interesting problem, also a type of tree child nodes switch problem. We cannot solve this problem with the tree traverse idea, since if we just know the preorder traverse sequence, then we cannot actually recover the tree since many possibilities exist. Thus, we should better think it in another way: we should just compare that in each level of partitions, if there are a possible correct way for s1 to dictionary (I mean char match without considering sequence) match s2? Thus, we need to consider all the levels of partitions (in each level, only one partion is correct, then this level is correct), so we use recursive calling.  
+
 # old
 for fun, forever
 
