@@ -222,6 +222,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 109. reverseLinkedListBetween.cpp: use tail0, head1, tail1, head2 to partition the linked list to 3 parts. Pay attention to the m is the head case.
 
+110. restoreIpAddresses.cpp: Using the skip step as the base to form the for loop, and pay attention to corner cases, like '025', like '744' and so on.
+
 # old
 for fun, forever
 
