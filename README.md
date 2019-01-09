@@ -212,6 +212,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 104. isScramble.cpp (leetcode87): A very interesting problem, also a type of tree child nodes switch problem. We cannot solve this problem with the tree traverse idea, since if we just know the preorder traverse sequence, then we cannot actually recover the tree since many possibilities exist. Thus, we should better think it in another way: we should just compare that in each level of partitions, if there are a possible correct way for s1 to dictionary (I mean char match without considering sequence) match s2? Thus, we need to consider all the levels of partitions (in each level, only one partion is correct, then this level is correct), so we use recursive calling.  
 
+105. mergeSortedArray.cpp: a stupid problem. The idea is easy: maintain two pointers to merge the two arrays. Pay attention to corner keys that the first array is empty. I'm now still quite understanding: why vec.insert(vec.begin(),10) can fail...
+
 # old
 for fun, forever
 
