@@ -216,6 +216,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 106. grayCode.cpp: bit operation. Find some basic law, and use bit operation to left move. x<<=1, x= x<<1;
 
+107. subsetsWithDup.cpp: This is a typical question about dfs with duplicate cases. In each dfs level, we need to use a while loop to eliminate the remaining duplicates after this dfs level, since we donot like to waste dfs with duplicate begainings.
+
 # old
 for fun, forever
 
