@@ -239,6 +239,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 117. isValidBST.cpp: to check if the given btree is a valid bst or not. We first in-order traverse the tree, and check if the resulted array is rigously asending ordered or not.
 
+118. isSameTree.cpp: traditional preorder traverse.
+
 # old
 for fun, forever
 
