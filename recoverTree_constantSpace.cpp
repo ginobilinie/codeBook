@@ -9,17 +9,17 @@
  */
 class Solution {
 public:
-    TreeNode* bigger = NULL;
-    TreeNode* smaller = NULL;
+    TreeNode* firstViolatedNode = NULL;
+    TreeNode* lastViolatedNode = NULL;
     TreeNode* prev = NULL;
     //actually, this is not a very general method, and it can only be used for this problem
     //since it can only solve two element's switch mistake
     void recoverTree(TreeNode* root) {
         adjustTree(root);
-        if (bigger && smaller)  {
-            int tmp = bigger->val;
-            bigger->val = smaller->val;
-            smaller->val = tmp;
+        if (firstViolatedNode && lastViolatedNode)  {
+            int tmp = firstViolatedNode->val;
+            firstViolatedNode->val = lastViolatedNode->val;
+            lastViolatedNode->val = tmp;
         }
     }
     
@@ -36,12 +36,15 @@ public:
         //than the current node (root), if it is bigger, then we should 
         if (prev && prev->val > root->val)   
         {
-            if (!bigger) {
-                bigger = prev;
-                smaller = root;
+            if (!firstViolatedNode) {
+                firstViolatedNode = prev;
+                lastViolatedNode = root;
             }
             else
-                smaller = root;
+                //since there are only two elements wrongly swapped, so we should remember the first
+                //out of order value (should be bigger) and the last out of order value (should be smaller)
+                //but this algorithm only suits for there are only two wrongly swapped nodes.
+                lastViolatedNode = root; 
         }
         prev = root;
         
