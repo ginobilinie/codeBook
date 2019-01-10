@@ -241,6 +241,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 118. isSameTree.cpp: traditional preorder traverse.
 
+119. recoverTree.cpp: recover the BSTree without chaning the tree's structure. I use a stupid method: we first in-order traverse the tree, and result in a vector, and then we sort the vector, in the end, we in-order traverse the tree again and assign values for the nodes. It costs about 80ms.
+
 # old
 for fun, forever
 
