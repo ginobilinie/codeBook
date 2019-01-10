@@ -245,6 +245,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 120. recoverTree_constantSpace.cpp: sam as 119, but with constant space O(1), the time complexity is O(n). The idea again is in-order traverse. It maintains a prev node to remember the just-now-visited node, and the root is the current visited node. if current node's value is smaller than the just-now-visited node (which means the first violated order node), then we should remember it as the firstViolatedNode, but we should not switch them immediately, since there may later violations, if there are indeed some later violations, then we should update the lastViolatedNode, and we finally swith the firstViolated and lastViolated node in the final step.  **since there are only two elements wrongly swapped, so we should remember the first out of order value (should be bigger) and the last out of order value (should be smaller). However, this algorithm only suits for there are only two wrongly swapped nodes.
 
+121. isSymmetricTree.cpp: to judge if a tree is symmetric or not. Use recursive method. 
+
 # old
 for fun, forever
 
