@@ -230,8 +230,10 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 113. generateTrees_referenceVersion.cpp: same with 112, but we use reference type as a instead. However, it seems it costs 20ms (16ms if using pointer). 
 
-114. numTrees.cpp: following 112 and 113, easier one, to compute the number of possible bst trees given a number. Solved by a dp: 
-f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980ms.
+114. numTrees.cpp: following 112 and 113, easier one, to compute the number of possible bst trees given a number. Solved by a dp with recursive function: 
+f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980ms, because it repeated compute the same number.
+
+115. numTrees_faster.cpp: same as 114. Instead of recursive function, we use a vector to store the values, and we run from 0 to n so that we can avoid the repeated computation.
 
 # old
 for fun, forever
