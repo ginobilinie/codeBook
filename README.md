@@ -247,6 +247,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 121. isSymmetricTree.cpp: to judge if a tree is symmetric or not. Use recursive method. 
 
+122. levelOrder.cpp: traverse the tree in level order, and we should put elements of each level in a same vector. I write it using bfs, with two queue, one queue stores the TreeNode*, another one stores the level id.
+
 # old
 for fun, forever
 
