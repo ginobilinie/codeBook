@@ -228,6 +228,8 @@ Then go row by row set them to 0. Then go column by column set them to 0. Finall
 
 112. generateTrees.cpp: given a number, generate all the possible binary search trees. This is a very good and important problem. Note only about the recurse idea, but also about combine all possible left Trees (l to i-1) and corresponding right trees (i+1 to r) to form a new tree rooted at (i). More importantly, since the vector may be huge, we should better use * type as return value. Of course, we can also use reference type as function parameter.
 
+113. generateTrees_referenceVersion.cpp: same with 112, but we use reference type as a instead. However, it seems it costs 20ms (16ms if using pointer). 
+
 # old
 for fun, forever
 
