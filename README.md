@@ -235,6 +235,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 115. numTrees_faster.cpp: same as 114. Instead of recursive function, we use a vector to store the values, and we run from 0 to n so that we can avoid the repeated computation.
 
+116. isInterleave.cpp: Given s1, s2, s3, find whether s3 is formed by the interleaving (from left to right order for both s1 and s2) of s1 and s2. We design a dp to solve it: dp[i][j] = s3[i+j-1]==s2[j-1]&&dp[i][j-1]||s3[i+j-1]==s1[i-1]&&dp[i-1][j]. For initialize, we initialize dp[0][j] and dp[i][0] which means we only use characers from s1 or s2. Here, dp[i][j] means using the first i characters from s1 and the first j characters from s2 can be interleaved form s3[i+j-1] or not.
+
 # old
 for fun, forever
 
