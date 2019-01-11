@@ -272,6 +272,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
   
 130. isBalancedBTree.cpp: to judge if a bTree is a height balanced binary tree or not. write a function to return height with postorder traverse. And we determine if the abs(leftH - rightH)>1 at each node, if yes, then not balanced tree. 
 
+131. minDepth.cpp: Note for the only-one-child case!!!!
+
 # old
 for fun, forever
 
