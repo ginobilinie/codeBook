@@ -274,6 +274,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 131. minDepth.cpp: Note for the only-one-child case!!!!
 
+132. hasPathSum.cpp: Note for the definition of the leaf node: both left and right child are NULL!!!
+
 # old
 for fun, forever
 
