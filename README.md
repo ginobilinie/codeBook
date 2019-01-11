@@ -286,6 +286,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 137. minimumTotal_1dimDP.cpp, same as 136, but use one dim dp. maintain a prev vector and curr vector to measure the current smallest number.
 
+138. maxProfit.cpp: Scan the array from left to right to find the maximum gap. Maintain a currMin during scan. Actually, this problem just allows only one transcation, if it allows numerous transcations, then this is a very hard problem.
+
 # old
 for fun, forever
 
