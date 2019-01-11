@@ -278,7 +278,9 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 133. pathSum_store.cpp: Based on 132, we should store all the possible stores. dfs+backtracking.
 
-134. generatePascalTriangle.cpp: generate pascial triangle.
+134. generatePascalTriangle.cpp: generate pasical triangle.
+
+135. getRow_vector.cpp: generate the kth's row pasical line.
 
 # old
 for fun, forever
