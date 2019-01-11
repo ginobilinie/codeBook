@@ -282,6 +282,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 135. getRow_vector.cpp: generate the kth's row pasical line.
 
+136. minimumTotal.cpp: easiyl done with a two dimension dp. dp[i][j] = min(dp[i-1][j],dp[i-1][j-1]), for i>=1, and 0<j<sz-1. Pay attention to the initialization.
+
 # old
 for fun, forever
 
