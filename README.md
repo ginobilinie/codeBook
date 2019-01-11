@@ -249,6 +249,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 122. levelOrder.cpp: traverse the tree in level order, and we should put elements of each level in a same vector. I write it using bfs, with two queue, one queue stores the TreeNode*, another one stores the level id.
 
+123. zigzagLevelOrder.cpp: similar with 123, but in a zigzag manner. The solution is quite similar with 122, but we just need to use a variable cnts to measure whether it is in odd or even line.
+
 # old
 for fun, forever
 
