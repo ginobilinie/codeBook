@@ -284,6 +284,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 136. minimumTotal.cpp: easiyl done with a two dimension dp. dp[i][j] = min(dp[i-1][j],dp[i-1][j-1]), for i>=1, and 0<j<sz-1. Pay attention to the initialization.
 
+137. minimumTotal_1dimDP.cpp, same as 136, but use one dim dp. maintain a prev vector and curr vector to measure the current smallest number.
+
 # old
 for fun, forever
 
