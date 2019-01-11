@@ -262,6 +262,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 128. sortedArrayToBST.cpp: sorted array to height balanced BSTree. We just use the mid to create a new head, and the partition the problem to two subproblems (left and right), and we can result in a elegant recursive code. Instead of manully partition the vector to the parts like 125 and 126, we can use index (l and r) to show virtually parttition the vector to two parts.
 
+129. sortedListToBST.cpp: sorted linked list to height balanced BSTree. We just find the middle pointer of the linked list and partition to two parts to build tree. Note about only 1 nodes case.
+
 # old
 for fun, forever
 
