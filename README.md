@@ -251,6 +251,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 123. zigzagLevelOrder.cpp: similar with 123, but in a zigzag manner. The solution is quite similar with 122, but we just need to use a variable cnts to measure whether it is in odd or even line.
 
+124. maxDepth.cpp: max depth of a tree.
+
 # old
 for fun, forever
 
