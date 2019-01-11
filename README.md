@@ -253,6 +253,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 124. maxDepth.cpp: max depth of a tree.
 
+125. buildTree.cpp: build a tree based on preorder and inorder traverse sequence. Use preoder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec.
+
 # old
 for fun, forever
 
