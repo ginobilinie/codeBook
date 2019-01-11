@@ -255,7 +255,9 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 125. buildTree.cpp: build a tree based on preorder and inorder traverse sequence. Use preoder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec.
   
-  126. buildTree_v2.cpp: build a tree based on postorder and inorder traverse sequence. Use postorder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec.
+ 126. buildTree_v2.cpp: build a tree based on postorder and inorder traverse sequence. Use postorder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec.
+
+127. levelOrderBottom.cpp: traverse the tree in level order, and we should put elements of each level in a same vector. I write it using bfs, with two queue, one queue stores the TreeNode*, another one stores the level id. Then we reverse the result vector.
 
 # old
 for fun, forever
