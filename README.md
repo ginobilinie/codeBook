@@ -253,11 +253,14 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 124. maxDepth.cpp: max depth of a tree.
 
-125. buildTree.cpp: build a tree based on preorder and inorder traverse sequence. Use preoder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec.
+125. buildTree.cpp: build a tree based on preorder and inorder traverse sequence. Use preoder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec. Actually, we can also use index (l and r) to show virtually parttition the vector to two parts, but this may not easy to decide the head in this case.
+
   
  126. buildTree_v2.cpp: build a tree based on postorder and inorder traverse sequence. Use postorder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec.
 
 127. levelOrderBottom.cpp: traverse the tree in level order, and we should put elements of each level in a same vector. I write it using bfs, with two queue, one queue stores the TreeNode*, another one stores the level id. Then we reverse the result vector.
+
+128. sortedArrayToBST.cpp: sorted array to height balanced BSTree. We just use the mid to create a new head, and the partition the problem to two subproblems (left and right), and we can result in a elegant recursive code. Instead of manully partition the vector to the parts like 125 and 126, we can use index (l and r) to show virtually parttition the vector to two parts.
 
 # old
 for fun, forever
