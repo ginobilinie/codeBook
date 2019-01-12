@@ -307,6 +307,8 @@ the max profit (use methods in 138) in the left partition and right partition, a
 
 148. numDistinct.cpp: problem same as 147. But I use a two-dim dp method.  a). any s can have eact one match of "" (the end of s have a ""); b) use or not use the current match. dp[i][j+1] means we donot use s[i] to match t[j], then the result should be s[i-1] match t[j], dp[i][j] means we use s[i] to match t[j], the result should be same with s[i-1] match t[j-1]; c)we can only use the previous match, since we cannot use the current match, since we cannot use s[i] to match t[j], then we should use s[i-1] to match t[j], so it is dp[i][j+1].
 
+149. connectTree.cpp: Populating Next Right Pointers in Each Node. I use q queue to do bfs. However, if we need constant extra space, then we need some other methods.
+
 # old
 for fun, forever
 
