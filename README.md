@@ -288,6 +288,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 138. maxProfit.cpp: Scan the array from left to right to find the maximum gap. Maintain a currMin during scan. Actually, this problem just allows only one transcation, if it allows numerous transcations, then this is a very hard problem.
 
+139. flattenBTree.cpp: flatten a BTree to a linked list in a preorder sequence. Use preorder squence. Maintain a global prev pointer to indicate the current parent pointer. And let the current pointer to be right child of this global prev pointer. More importantly, we should also locally store the leftnode and right node of the current node every time so that we can preorder traverse it.
+
 # old
 for fun, forever
 
