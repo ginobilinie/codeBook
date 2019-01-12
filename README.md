@@ -303,6 +303,8 @@ the max profit (use methods in 138) in the left partition and right partition, a
 
 146. isPalindrome.cpp: first preprocess the string, and then use while loop to scan from left to right and right to left at the same time.
 
+147. numDistinct_dfs.cpp: Given a string S and a string T, count the number of distinct subsequences of S which equals T. I design a dfs method to search it. Though corrected, but TLE.
+
 # old
 for fun, forever
 
