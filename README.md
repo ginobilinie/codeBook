@@ -309,6 +309,7 @@ the max profit (use methods in 138) in the left partition and right partition, a
 
 149. connectTree.cpp: Populating Next Right Pointers in Each Node. I use q queue to do bfs. However, if we need constant extra space, then we need some other methods.
 
+150. connectTree_constantspace.cpp: same with 149. This time, we take advantage of the obserations: ob1. root->left->next = root->right; ob2. root->right->ext = root->next->left;
 # old
 for fun, forever
 
