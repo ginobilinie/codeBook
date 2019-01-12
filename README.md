@@ -292,6 +292,10 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 140. maxProfit_moreTranscation.cpp:  Same problem as 138, but it allows more than one trnscations totally. A greedy algorithm: for the current visited pointer, we find the first item of the first rigorously increased sequence, which is actually the minPrice from the current pointer on. Starting from this minPrice, we find the first item of the first rigorously decreased sequence, which is actually the maxPrice from the minPrice on. Thus, the biggest profit in this margin is maxVal - minVal. Then we move the pointer on to neighbor of the maxPrice pointer. And continue this process. Actually, we can easily prove that this method can give the max total profit.
 
+141. maxProfit_twoTranscation_failure.cpp: I use the method as 140, and just store the biggest and 2nd biggest profit, and I return the sum of them, but failed. Check this one: [1,2,4,2,5,7,2,4,9,0].
+
+142.
+
 # old
 for fun, forever
 
