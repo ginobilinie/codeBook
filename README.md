@@ -299,6 +299,8 @@ the max profit (use methods in 138) in the left partition and right partition, a
 
 143. maxProfit_twotranscation_faster.cpp: same as 143, but I change this method with the help of addtional O(n) space complexity to reduce the time complexity to O(n), as 143 mentioned. Use scan1 array to record the maximum profit so far to the current position which scans left to right. And use scan2 array to record the maximum profit so far to the current position which scans right to left. And then we check the maximum total value using scan1 and scan2.
 
+144. maxPathSum.cpp: This is a very good problem. In the array, if we want to get the biggest sum of a certain consitutive part of arrays, we can easiy consider if the current sum value is greater than 0 or not, and then decide the dp[i] = data[i] or dp[i-1]+data[i]. In this problem, it changed to a tree, and we need to find the greatest sum of certain path from some starting node to some end node. Actually, we should use dfs with post-order traverse method: maintain a value (can be return value) recording the single path sum (may not contain the whole path but part of the path), and also maintain a variable recording the cross-path greatest path (can use reference parameter). If the single path sum<0, then the updated single path sum = 0+currnode->val, followed by it, we update the cross-path greatest sum accordingly.
+
 # old
 for fun, forever
 
