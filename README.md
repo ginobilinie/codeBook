@@ -294,7 +294,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 141. maxProfit_twoTranscation_failure.cpp: I use the method as 140, and just store the biggest and 2nd biggest profit, and I return the sum of them, but failed. Check this one: [1,2,4,2,5,7,2,4,9,0].
 
-142.
+142. maxProfit_twoTranscation.cpp: Use two for loops, the first for loop partition the array to two parts at each iteration, and we find 
+the max profit (use methods in 138) in the left partition and right partition, and then we can finally get the max total profits.
 
 # old
 for fun, forever
