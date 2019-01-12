@@ -313,6 +313,8 @@ the max profit (use methods in 138) in the left partition and right partition, a
 
 151. connectNonPerfectBTree.cpp: Populating Next Right Pointers (may not a perfect BTree) in Each Node. I use q queue to do bfs. However, if we need constant extra space, then we need some other methods.
 
+152. connectNonPerfectTree.cpp: same as 151. This one use the constant extra space.
+
 # old
 for fun, forever
 
