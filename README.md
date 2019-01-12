@@ -256,7 +256,7 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 125. buildTree.cpp: build a tree based on preorder and inorder traverse sequence. Use preoder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec. Actually, we can also use index (l and r) to show virtually parttition the vector to two parts, but this may not easy to decide the head in this case.
 
   
- 126. buildTree_v2.cpp: build a tree based on postorder and inorder traverse sequence. Use postorder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec.
+126. buildTree_v2.cpp: build a tree based on postorder and inorder traverse sequence. Use postorder to determine the head, and use inorder to determine the partition. And it can be easily write a recursive method. Note how to use vector<int> vec(myvec.begin(), myvec.begin()+1) can just give the a new vector containing the 1st element of myvec.
 
 127. levelOrderBottom.cpp: traverse the tree in level order, and we should put elements of each level in a same vector. I write it using bfs, with two queue, one queue stores the TreeNode*, another one stores the level id. Then we reverse the result vector.
 
@@ -300,6 +300,8 @@ the max profit (use methods in 138) in the left partition and right partition, a
 143. maxProfit_twotranscation_faster.cpp: same as 143, but I change this method with the help of addtional O(n) space complexity to reduce the time complexity to O(n), as 143 mentioned. Use scan1 array to record the maximum profit so far to the current position which scans left to right. And use scan2 array to record the maximum profit so far to the current position which scans right to left. And then we check the maximum total value using scan1 and scan2.
 
 144. maxPathSum.cpp: This is a very good problem. In the array, if we want to get the biggest sum of a certain consitutive part of arrays, we can easiy consider if the current sum value is greater than 0 or not, and then decide the dp[i] = data[i] or dp[i-1]+data[i]. In this problem, it changed to a tree, and we need to find the greatest sum of certain path from some starting node to some end node. Actually, we should use dfs with post-order traverse method: maintain a value (can be return value) recording the single path sum (may not contain the whole path but part of the path), and also maintain a variable recording the cross-path greatest path (can use reference parameter). If the single path sum<0, then the updated single path sum = 0+currnode->val, followed by it, we update the cross-path greatest sum accordingly.
+
+146. isPalindrome.cpp: first preprocess the string, and then use while loop to scan from left to right and right to left at the same time.
 
 # old
 for fun, forever
