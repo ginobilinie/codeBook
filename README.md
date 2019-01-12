@@ -290,6 +290,8 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 
 139. flattenBTree.cpp: flatten a BTree to a linked list in a preorder sequence. Use preorder squence. Maintain a global prev pointer to indicate the current parent pointer. And let the current pointer to be right child of this global prev pointer. More importantly, we should also locally store the leftnode and right node of the current node every time so that we can preorder traverse it.
 
+140. maxProfit_moreTranscation.cpp:  Same problem as 138, but it allows more than one trnscations totally. A greedy algorithm: for the current visited pointer, we find the first item of the first rigorously increased sequence, which is actually the minPrice from the current pointer on. Starting from this minPrice, we find the first item of the first rigorously decreased sequence, which is actually the maxPrice from the minPrice on. Thus, the biggest profit in this margin is maxVal - minVal. Then we move the pointer on to neighbor of the maxPrice pointer. And continue this process. Actually, we can easily prove that this method can give the max total profit.
+
 # old
 for fun, forever
 
