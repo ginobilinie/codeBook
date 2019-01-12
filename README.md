@@ -297,7 +297,7 @@ f(n) = sigma_k_1_to_n (f(n-k)*f(k-1)). However it is quite slow, cost about 2980
 142. maxProfit_twoTranscation.cpp: Use two for loops, the first for loop partition the array to two parts at each iteration, and we find 
 the max profit (use methods in 138) in the left partition and right partition, and then we can finally get the max total profits. This requires O(n^2) time complexity but with O(1) constant space complexity. We can reform this method with the help of addtional O(n) space complexity to reduce the time complexity to O(n), as 143 mentioned.
 
-143.
+143. maxProfit_twotranscation_faster.cpp: same as 143, but I change this method with the help of addtional O(n) space complexity to reduce the time complexity to O(n), as 143 mentioned. Use scan1 array to record the maximum profit so far to the current position which scans left to right. And use scan2 array to record the maximum profit so far to the current position which scans right to left. And then we check the maximum total value using scan1 and scan2.
 
 # old
 for fun, forever
