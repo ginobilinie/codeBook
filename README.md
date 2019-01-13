@@ -333,6 +333,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 158. longestConsecutive_unordered_map.cpp: Same problem as 157. I first use unordered_map to store these numbers (it is implemented by hash-table, so it is O(N)), and then we pick the first element, and while loop in the upper side and while loop in the lower side, each time, when we pick a value from the unordered_map, we should erase(key) this elements, after this while loop, then we pick a new first element of the map, and do it again.
 
+159. sumNumbers_allPath.cpp: pre-order traverse. Note the definition of the leaf nodes.
+
 # old
 for fun, forever
 
