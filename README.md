@@ -316,7 +316,7 @@ the max profit (use methods in 138) in the left partition and right partition, a
 152. connectNonPerfectTree.cpp: same as 151. This one use the constant extra space.   Explicit observation: ob1. if (root->right) root->left->next = root->right, else root->left->next = root->next->left (or right), we can use while to check the first found one; ob2. root->right->next = root->next->left (or right), we can use while to check the first found one.
 Implicit solution: we use head to remember the leftmost pointer of a new layer, and use a tmp to link the nodes in a layer one by one. This is a very tricky method which does things implicitly. The very important point is here: we implicitly point the head to the first pointer of the next layer, since tmp directly link with head, so the first touch of tmp in a new layer, then it is assigned to head implictly. tmp is used to connect pointers in a layer implictly.
 
-153. ladderLength.cpp: bfs.
+153. ladderLength.cpp: bfs solution. I write a standard bfs solution with only one while loop. To remeber the level information, I have to add a new level queue besides the myq which maintains the basic node information to maintain the level information. Actually, I can avoid it by finishing scan the current's level nodes within the while loop with an extra for loop.
 
 # old
 for fun, forever
