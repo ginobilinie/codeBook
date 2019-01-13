@@ -83,6 +83,8 @@ public:
                     // if (root)
                 }
             }
+            if (!root->left&&!root->right)
+                root = root->next;
         }
     }
 };
