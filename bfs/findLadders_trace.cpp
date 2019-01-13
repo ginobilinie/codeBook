@@ -10,7 +10,15 @@ public:
     {
         queue<vector<string>> myq;
         int sz = wordList.size();
-        vector<int> used(sz,0);
+        vector<bool> used(sz,0);
+        for (int i=0; i<sz; i++)
+		{
+			if (beginWord==wordList[i])
+			{
+				used[i]=1;
+				break;
+			}
+		}
         int depth = 0;
         //myq.push(beginWord);
         depth++;
@@ -23,6 +31,7 @@ public:
         while(!myq.empty())
         {
             int qsz = myq.size();
+            vector<bool> tmpused = used;
             for (int i=0; i<qsz; i++)
             {
                 vector<string> currWordVec = myq.front();
@@ -36,11 +45,15 @@ public:
                 
                 for (int j=0; !flag&&j<wordList.size(); j++)
                 {
-                    if (!used[j]&&canTransform(currWord,wordList[j]))
+                    if (!tmpused[j]&&canTransform(currWord,wordList[j]))
                     {
-                        currWordVec.push_back(currWord);
-                        myq.push(currWordVec);   
-                        used[j] = 1;
+                        vector<string> tmpVec = currWordVec;
+                        tmpVec.push_back(wordList[j]);
+                        myq.push(tmpVec);   
+							if (wordList[j]!=endWord)
+                            {
+                                used[j] = 1;
+                            }
                     }
                 }
                 
