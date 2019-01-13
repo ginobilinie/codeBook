@@ -326,6 +326,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
         that's because if, two sameMod[r], then (sameMod1-sameMod2)%K==0, so we can add 1, 
         if a remainder r comes (assume we have previously x such remainder r), then we can use this new r to match the previous
         x remainders r, so we should add x to the final solution.</b>
+	
+156. findLadders_trace.cpp: same as 153, but we have to output the trace. The idea is use a queue of vector, the vector contains the candidate vectors, if the candidate vector's end one matches the endWord, then we push back the candidate vector.
 
 # old
 for fun, forever
