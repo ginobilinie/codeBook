@@ -314,7 +314,9 @@ the max profit (use methods in 138) in the left partition and right partition, a
 151. connectNonPerfectBTree.cpp: Populating Next Right Pointers (may not a perfect BTree) in Each Node. I use q queue to do bfs. However, if we need constant extra space, then we need some other methods.
 
 152. connectNonPerfectTree.cpp: same as 151. This one use the constant extra space.   Explicit observation: ob1. if (root->right) root->left->next = root->right, else root->left->next = root->next->left (or right), we can use while to check the first found one; ob2. root->right->next = root->next->left (or right), we can use while to check the first found one.
-Implicit solution: we use head to remember the leftmost pointer of a new layer, and use a tmp to link the nodes in a layer one by one. This is a very tricky method which does things implicitly. The very important point is here: we implicitly point the head to the first pointer of the next layer, since tmp directly link with head, so the first touch of tmp in a new layer, then it is assigned to head implictly. tmp is used to connect pointers in a layer implictly
+Implicit solution: we use head to remember the leftmost pointer of a new layer, and use a tmp to link the nodes in a layer one by one. This is a very tricky method which does things implicitly. The very important point is here: we implicitly point the head to the first pointer of the next layer, since tmp directly link with head, so the first touch of tmp in a new layer, then it is assigned to head implictly. tmp is used to connect pointers in a layer implictly.
+
+153. ladderLength.cpp: bfs.
 
 # old
 for fun, forever
