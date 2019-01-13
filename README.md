@@ -321,6 +321,11 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 154. subarraysDivByK_tle.cpp: Given an array A of integers, return the number of (<b>contiguous</b>, non-empty) subarrays that have a sum divisible by K. A naive solution with two for loops. However, it will be TLE.
 
 155. subarraysDivByK_presum.cpp: same problem as 154. I learned a new technique called <b>presum</b>!!! When we scan the array from left to right, we record the sum from the first item to the current item, and we make sum mod K, suppose the remainder is r, and we record how much this remainder will appear during the scan. if sameMod[r]=2, which means sum1%K = sum2%K, so (sum1-sum2)%K ==0, so we should add 1, when a new sum which has a mod remainder r come, we should add sameMod[r] to the final result, and then sameMod[r]++. This is a very technique solution, I learned a lot from this problem.
+        <b>sameMod vector records the number of the prefix sums with same remainder against modouls K.
+        Briefly speaking, we use sameMode to record the number of r = (A[0]+A[1]+...A[i])%K, and we use sameMod[r] counts it
+        that's because if, two sameMod[r], then (sameMod1-sameMod2)%K==0, so we can add 1, 
+        if a remainder r comes (assume we have previously x such remainder r), then we can use this new r to match the previous
+        x remainders r, so we should add x to the final solution.</b>
 
 # old
 for fun, forever
