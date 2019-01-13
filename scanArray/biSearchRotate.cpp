@@ -24,6 +24,7 @@ public:
                 res = 1;
                 break;
             }
+            
             else if (nums[mid]<=nums[r])//right side is ordered
             {
                 if (target>=nums[mid] && target<=nums[r])
