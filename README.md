@@ -329,7 +329,7 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 	
 156. findLadders_trace.cpp: same as 153, but we have to output the trace. The idea is use a queue of vector, the vector contains the candidate vectors which describes the path, if the candidate vector's end one matches the endWord, then we push back the candidate vector. The important point is how to use the used vector. When we scan each level (e.g., ith level), the used should be based on the i-th level, which means, for the ith level, the used should be same, so we used a tmpused = used when we can the ith level and update the ith level's information in used array.
 
-157. longestConsecutive_unorderedArray.cpp: Given an unsorted array of integers, find the length of the longest consecutive elements sequence. Solution: use a map (red-black tree) to maintain the existence of the numbers. Since map's keys are ordered, so we can take advantage of its keys, and check the longest consecutive sequence.
+157. longestConsecutive_unorderedArray.cpp: Given an unsorted array of integers, find the length of the longest consecutive elements sequence. Solution: use a map (red-black tree) to maintain the existence of the numbers. Since map's keys are ordered, so we can take advantage of its keys, and check the longest consecutive sequence. The drawback of this solution is that the insertion of N numbers of a  map may cost NlogN, since it has to adjust the order. If with a unordered map, what should I do?
 
 158. 
 
