@@ -318,6 +318,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 153. ladderLength.cpp: bfs solution. I write a standard bfs solution with only one while loop. To remeber the level information, I have to add a new level queue besides the myq which maintains the basic node information to maintain the level information. Actually, I can avoid it by finishing scan the current's level nodes within the while loop with an extra for loop, as ladderLength_1queue.cpp mentioned.
 
+154. subarraysDivByK_tle.cpp: Given an array A of integers, return the number of (<b>contiguous</b>, non-empty) subarrays that have a sum divisible by K. A naive solution with two for loops. However, it will be TLE.
+
 # old
 for fun, forever
 
