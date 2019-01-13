@@ -14,6 +14,7 @@ public:
     void connect(TreeLinkNode *root) {
         if (!root) return;
         root->next = NULL;
+        TreeLinkNode* leftmost = root;
         while (root)
         {
             if (root->left)
@@ -22,7 +23,64 @@ public:
                     root->left->next = root->right;
                 else
                 {
-                    while (root->next&&!root->)
+                    TreeLinkNode* tmp = root;
+                    while (tmp->next&&!tmp->next->left&&!tmp->next->right)
+                        tmp = tmp->next;
+                    if (root==tmp)//rightmost one
+                    {
+                        root->left->next = NULL;//go to next layer
+                        while(leftmost&&!leftmost->left&&!leftmost->right)
+                            leftmost = leftmost->next;
+                        if (!leftmost)
+                            return;
+                        else if (leftmost->left)
+                            root = leftmost->left;
+                        else if (leftmost->right)
+                            root = leftmost->right;
+                        else
+                            return;
+                    }
+                    else
+                    {
+                        if (tmp->left)
+                            root->left->next = tmp->left;
+                        else if (tmp->right)
+                            root->left->next = tmp->right;
+                        else
+                            root->left->next = NULL;
+                        root = tmp;
+                    }
+                }
+            }
+            if (root->right)
+            {
+                TreeLinkNode* tmp = root;
+                while (tmp->next&&!tmp->next->left&&!tmp->next->right)
+                    tmp = tmp->next;
+                if (root==tmp)//rightmost one
+                {
+                    root->right->next = NULL;//go to next layer
+                    while(leftmost&&!leftmost->left&&!leftmost->right)
+                        leftmost = leftmost->next;
+                    if (!leftmost)
+                        return;
+                    else if (leftmost->left)
+                        root = leftmost->left;
+                    else if (leftmost->right)
+                        root = leftmost->right;
+                    else
+                        return;
+                }
+                else
+                {
+                    if (tmp->left)
+                        root->right->next = tmp->left;
+                    else if (tmp->right)
+                        root->right->next = tmp->right;
+                    else
+                        root->right->next = NULL;
+                    root = tmp;
+                    // if (root)
                 }
             }
         }
