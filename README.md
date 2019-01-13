@@ -331,7 +331,7 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 157. longestConsecutive_unorderedArray.cpp: Given an unsorted array of integers, find the length of the longest consecutive elements sequence. Solution: use a map (red-black tree) to maintain the existence of the numbers. Since map's keys are ordered, so we can take advantage of its keys, and check the longest consecutive sequence. The drawback of this solution is that the insertion of N numbers of a  map may cost NlogN, since it has to adjust the order. If with a unordered map, what should I do?
 
-158. 
+158. longestConsecutive_unordered_map.cpp: Same problem as 157. I first use unordered_map to store these numbers (it is implemented by hash-table, so it is O(N)), and then we pick the first element, and while loop in the upper side and while loop in the lower side, each time, when we pick a value from the unordered_map, we should erase(key) this elements, after this while loop, then we pick a new first element of the map, and do it again.
 
 # old
 for fun, forever
