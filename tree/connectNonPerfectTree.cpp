@@ -11,80 +11,39 @@ public:
     //observation
     //ob1. if (root->right) root->left->next = root->right, else root->left->next = root->next->left (or right), we can use while to check the first found one
     //ob2. root->right->next = root->next->left (or right), we can use while to check the first found one.
+    
+    //the very important point is here: we implictly point the head to the first pointer of the next layer
+    //since tmp directly link with head, so the first touch of tmp in a new layer, then it is assigned to head implictly.
+    //tmp is used to connect pointers in a layer implictly
     void connect(TreeLinkNode *root) {
-        if (!root) return;
-        root->next = NULL;
-        TreeLinkNode* leftmost = root;
+        if (!root)
+            return;
+        TreeLinkNode head(0), *tmp = &head;
         while (root)
         {
             if (root->left)
             {
-                if (root->right)
-                    root->left->next = root->right;
-                else
-                {
-                    TreeLinkNode* tmp = root;
-                    while (tmp->next&&!tmp->next->left&&!tmp->next->right)
-                        tmp = tmp->next;
-                    if (root==tmp)//rightmost one
-                    {
-                        root->left->next = NULL;//go to next layer
-                        while(leftmost&&!leftmost->left&&!leftmost->right)
-                            leftmost = leftmost->next;
-                        if (!leftmost)
-                            return;
-                        else if (leftmost->left)
-                            root = leftmost->left;
-                        else if (leftmost->right)
-                            root = leftmost->right;
-                        else
-                            return;
-                    }
-                    else
-                    {
-                        if (tmp->left)
-                            root->left->next = tmp->left;
-                        else if (tmp->right)
-                            root->left->next = tmp->right;
-                        else
-                            root->left->next = NULL;
-                        root = tmp;
-                    }
-                }
+                tmp->next = root->left;
+                tmp = tmp->next;//we dont worry to point to the next node for the root->left->next at this time
             }
             if (root->right)
             {
-                TreeLinkNode* tmp = root;
-                while (tmp->next&&!tmp->next->left&&!tmp->next->right)
-                    tmp = tmp->next;
-                if (root==tmp)//rightmost one
-                {
-                    root->right->next = NULL;//go to next layer
-                    while(leftmost&&!leftmost->left&&!leftmost->right)
-                        leftmost = leftmost->next;
-                    if (!leftmost)
-                        return;
-                    else if (leftmost->left)
-                        root = leftmost->left;
-                    else if (leftmost->right)
-                        root = leftmost->right;
-                    else
-                        return;
-                }
-                else
-                {
-                    if (tmp->left)
-                        root->right->next = tmp->left;
-                    else if (tmp->right)
-                        root->right->next = tmp->right;
-                    else
-                        root->right->next = NULL;
-                    root = tmp;
-                    // if (root)
-                }
+                tmp->next = root->right;//here, we just point the left pointer to next right, great idea
+                tmp = tmp->next;
             }
-            if (!root->left&&!root->right)
+            if (root->next)
+            {
                 root = root->next;
+            }
+            else//right most pointer
+            {
+                //go to next layer
+                root = head.next;
+                //clear tmp and head
+                head.next = NULL;
+                tmp = &head;
+            }
+            
         }
     }
 };
