@@ -337,6 +337,13 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 160. flip_board.cpp: simple but boring dfs.
 
+161. The longest Palindromic Substring problem. I have write a scan string version which is faster. In this version, we can write it a dp problem. And the dynamic status convert equation: consider a substring with len-length
+        dp[i][j] = {1;//i==j dp[i+1][j-1];//s[i]==s[j] 0//s[i]!=s[j]}
+        initialization: dp[i][i] and dp[i][i+1]
+        and we can consider from len=3 to len to s.length()
+	
+162.
+
 # old
 for fun, forever
 
