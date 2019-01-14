@@ -352,7 +352,7 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 166. canCompleteCircuit.cpp: Simple O(n^2) method with pruning and mod for the circuit algorithm. 104ms. I'll write a O(n) algorithm with presum technique.
 
-167.
+167. canCompleteCircuit.cpp: first compute the elementwise different between gas and cost. Then we compute the cumulative sum, and check the minimum value's index. If the final element's cumulatvie result is >=0, which means there much be a route, and it should be the next index of minimal value's index. This is actually very tricky solution.
 
 # old
 for fun, forever
