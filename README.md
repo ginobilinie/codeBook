@@ -346,6 +346,7 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 163. minCutPalindromePartitioning.cpp: This is following 161,162, and it wants you to give the min number of partitions that can cover the whole string. My solution: dp+bfs. DP is as 161 and 162, to maintain a dp table about whether s[i...j] is palindrome or not. With this dp table, then we can easily use bfs to search the shortest path to cover the whole string. Pay attention to the prunning. Actually, our solution is a very fast solution (16ms).
 
+164. cloneGraph.cpp: deep copy of a graph which may contain self-cycle or repeated connection (like, 3->4, 3->4). This is not hard, but I can learn a lot from it. We need a unordered_map to maintain information about whether each node has been visited or not. dfs+graph+deepcody. Concept of deep copy: open new memory to store the object or values. When there are pointers, we neede deep copy, otherwise two calls of deconstructor will be a problem.  
 
 # old
 for fun, forever
