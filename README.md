@@ -348,6 +348,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 164. cloneGraph.cpp: deep copy of a graph which may contain self-cycle or repeated connection (like, 3->4, 3->4). This is not hard, but I can learn a lot from it. We need a unordered_map to maintain information about whether each node has been visited or not. dfs+graph+deepcody. Concept of deep copy: open new memory to store the object or values. When there are pointers, we neede deep copy, otherwise two calls of deconstructor will be a problem.  
 
+165. cloneGraph_bfs.cpp: same problem as 164. This time, I use bfs to do the deep copy of a graph. The important point is that a visited node doesn't need to visit again, which means we donot need to add it to queues once a node has been visited.
+
 # old
 for fun, forever
 
