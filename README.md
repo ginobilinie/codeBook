@@ -342,7 +342,7 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
         initialization: dp[i][i] and dp[i][i+1]
         and we can consider from len=3 to len to s.length()
 	
-162.
+162. partitionPalindrome.cpp. DP + DFS. We first use the method mentioned in 161 to build a dp table which obtain information about whether s[i..j] is a palindrome or not. Then we can take advantage of this dp table to dfs to obtain all the possible combinations. This is a quite good problem. My solutions acutally is very fast (8ms).
 
 # old
 for fun, forever
