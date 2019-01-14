@@ -350,6 +350,10 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 165. cloneGraph_bfs.cpp: same problem as 164. This time, I use bfs to do the deep copy of a graph. The important point is that a visited node doesn't need to visit again, which means we donot need to add it to queues once a node has been visited.
 
+166. canCompleteCircuit.cpp: Simple O(n^2) method with pruning and mod for the circuit algorithm. 104ms. I'll write a O(n) algorithm with presum technique.
+
+167.
+
 # old
 for fun, forever
 
