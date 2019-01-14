@@ -344,7 +344,7 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 	
 162. partitionPalindrome.cpp. DP + DFS. We first use the method mentioned in 161 to build a dp table which obtain information about whether s[i..j] is a palindrome or not. Then we can take advantage of this dp table to dfs to obtain all the possible combinations. This is a quite good problem. My solutions acutally is very fast (8ms).
 
-163. minCutPalindromePartitioning.cpp: This is following 161,162, and it wants you to give the min number of partitions that can cover the whole string. My solution: dp+bfs. DP is as 161 and 162, to maintain a dp table about whether s[i...j] is palindrome or not. With this dp table, then we can easily use bfs to search the shortest path to cover the whole string. Pay attention to the prunning.
+163. minCutPalindromePartitioning.cpp: This is following 161,162, and it wants you to give the min number of partitions that can cover the whole string. My solution: dp+bfs. DP is as 161 and 162, to maintain a dp table about whether s[i...j] is palindrome or not. With this dp table, then we can easily use bfs to search the shortest path to cover the whole string. Pay attention to the prunning. Actually, our solution is a very fast solution (16ms).
 
 
 # old
