@@ -64,7 +64,7 @@ public:
                         myq.push(i+1);
                         else
                             return;
-                       dp[currInd][i] = 0;
+                       dp[currInd][i] = 0;//this is very important for the prunning.
                    }
                 }            
               
