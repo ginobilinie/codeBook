@@ -360,6 +360,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 170. copyRandomList.cpp: deep copy a linked list with additional random pointer. Two parallel while loop. The first while loop build the linkedlist by tail insert, and second linked list for random pointers. Remeber to use the unordered_map.
 
+171. wordBreak_tle.cpp: given a string and a dict, to check if the string combined with one of multiple words to combine the string. In this version, I give a recursion method, but TLE.
+
 # old
 for fun, forever
 
