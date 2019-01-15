@@ -358,6 +358,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 169. singleNumber.cpp: Given a non-empty array of integers, every element appears twice except for one. Find that single one. Use xor (in c++, it is ^). Note, same number xor same number = 0, but 0 xor x = x. 4^6 = 100^110 = 0 1 0 
 
+170. copyRandomList.cpp: deep copy a linked list with additional random pointer. Two parallel while loop. The first while loop build the linkedlist by tail insert, and second linked list for random pointers. Remeber to use the unordered_map.
+
 # old
 for fun, forever
 
