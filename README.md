@@ -356,6 +356,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 168. candy.cpp: In my first thought, I think we can first find the min value, and propogate from the min value location to the left or right sides. Obviously, this cannot work for long sequence. Then I though we can sort this ratings together with their location information. Then we sort from left to right we can use map (automatically ranking the key) or use a struct to sort the ratings with its location. Then we can the sorted array from left to right and check if the index's left or right is visted or not, if neighbors are not visited, then we assign 1, otherwise max(leftVal, rightVal) or max(leftVal, rightVal)+1. Actually, a better solution is to find the partitions of longest decreasing sequences. For example, [5,4,3,3,2,1,1,7,6], [5,4,3|,3,2,1|,1,|7,6], then the candy should be [3,2,1,3,2,1,1,2,1], so totally sum(candyarray).
 
+169. singleNumber.cpp: Given a non-empty array of integers, every element appears twice except for one. Find that single one. Use xor (in c++, it is ^). Note, same number xor same number = 0, but 0 xor x = x. 4^6 = 100^110 = 0 1 0 
+
 # old
 for fun, forever
 
