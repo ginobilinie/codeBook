@@ -364,6 +364,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 172. wordBreak_path.cpp: same as 171, but it asks us to output all the possible results. The current version is actually correct, but may TLE in some cases.
 
+173. hasCycle.cpp: using unordered_map to record the node is visited or not.
+
 # old
 for fun, forever
 
