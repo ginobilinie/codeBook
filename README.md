@@ -369,6 +369,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 174. detectCycle.cpp: to find the first cycle point. I use a unordered_map to do it. Now I write another one without extra space. 
 The idea is first to use double skip skill to locate the first encountered point. And then we can start from the head and start from the encountered point, go with single skip, the first encounter point is the result we like to see.
 
+175. reorderList.cpp: Given a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→… My solution: first find the mid pointer using double skip and single skip technique; and then reverse the 2nd linked list: Ln->Ln-1->Ln-2->...; and then we combine the first part and second part by iteratively link.
+
 # old
 for fun, forever
 
