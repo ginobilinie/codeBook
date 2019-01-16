@@ -375,6 +375,8 @@ The idea is first to use double skip skill to locate the first encountered point
 
 177. preorderTraversal_whileloop.cpp: We use a while loop and stack to do the preorder traverse. After we visit the current node, we store the right child (non-empty) to the stack, and go the left node. If left node is not null, then we get the top node of the stack, and go on the while loop. 
 
+178. postorderTraversal.cpp: this is a simple recursive version.
+
 # old
 for fun, forever
 
