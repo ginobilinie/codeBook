@@ -366,6 +366,8 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 173. hasCycle.cpp: using unordered_map to record the node is visited or not. I also write a double-single skip method which doesn't need extra space in hasCycle_doubleSkip.cpp.
 
+174. detectCycle.cpp: to find the first cycle point. I use a unordered_map to do it. Now I write another one without extra space.
+
 # old
 for fun, forever
 
