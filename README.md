@@ -362,6 +362,7 @@ Implicit solution: we use head to remember the leftmost pointer of a new layer, 
 
 171. wordBreak_tle.cpp: given a string and a dict, to check if the string combined with one of multiple words to combine the string. In this version, I give a recursion method, but TLE. With simple revision, I just used a visited array to check if the current location is visited or not, then I can do most of the pruning. Codes are in wordBreak.cpp.
 
+172. wordBreak_path.cpp: same as 171, but it asks us to output all the possible results. The current version is actually correct, but may TLE in some cases.
 
 # old
 for fun, forever
