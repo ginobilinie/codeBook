@@ -377,8 +377,8 @@ The idea is first to use double skip skill to locate the first encountered point
 
 178. postorderTraversal.cpp: this is a simple recursive version.
 
-179. postorderTraversal_while_stack.cpp: We use a while loop and stack to do the non-recursive version. 
-we use stack to help following the rule:
+179. postorderTraversal_while_stack.cpp: We use a while loop and stack to do the non-recursive version. I also use a unordered_map to record whether it has been recorded or not.
+we use stack to help following the rule: 
          when we go to the current node
         1. we first check if it is leaf node, if it is, we visit it and record this visit
         2. if it is not a leaf node, then we check if the left child has been visited or not, if not, store the current node, and go to the left; if visited, go to the right if right hasn't been visited, if right has been visited or null, then we directly visit the curre node, and pop the stack, and then get the top to the new pointer.
