@@ -390,6 +390,8 @@ we use stack to help following the rule:
 
 181. insertionSortList.cpp: simple linked list process. Pay attention to the head cases. Insertion sort: every time we choose one value (from left to right), and insert it to the proper location in the already-sorted-list. 
 
+182. sortList_mergeSort.cpp: sort the linked list with mergeSort algorithm, sort and merge.
+
 # old
 for fun, forever
 
