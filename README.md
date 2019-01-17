@@ -392,6 +392,8 @@ we use stack to help following the rule:
 
 182. sortList_mergeSort.cpp: sort the linked list with mergeSort algorithm, sort and merge.
 
+183. evalRPN.cpp: use stack to simulate the post-order traverse.
+
 # old
 for fun, forever
 
