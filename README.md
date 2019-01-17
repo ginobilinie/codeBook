@@ -375,7 +375,7 @@ The idea is first to use double skip skill to locate the first encountered point
 
 177. preorderTraversal_whileloop.cpp: We use a while loop and stack to do the preorder traverse. After we visit the current node, we store the right child (non-empty) to the stack, and go the left node. If left node is not null, then we get the top node of the stack, and go on the while loop. 
 
-178. postorderTraversal.cpp: this is a simple recursive version.
+178. postorderTraversal.cpp: this is a simple recursive version for postorder traverse.
 
 179. postorderTraversal_while_stack.cpp: We use a while loop and stack to do the non-recursive version. I also use a unordered_map to record whether it has been recorded or not.
 we use stack to help following the rule: 
@@ -383,6 +383,10 @@ we use stack to help following the rule:
         1. we first check if it is leaf node, if it is, we visit it and record this visit
         2. if it is not a leaf node, then we check if the left child has been visited or not, if not, store the current node, and go to the left; if visited, go to the right if right hasn't been visited, if right has been visited or null, then we directly visit the curre node, and pop the stack, and then get the top to the new pointer.
         3. if it doesn't have a left child, then we check the right child. if right one is visited, then we directly visit the current node, and pop, and then get the top as the new pointer. if right hasn't been visited, we store the current node to the stack and go to the right.
+
+180. postorderTraversal_2stack.cpp: same problem as 178 and 179. I also write another non-recursive version using two stacks
+        The first stack stores the current node's left and right child nodes, and pop the top one to the sencond stack,
+        which means the 2nd stack acutally stores the reverse order of the post-oreder traverse
 
 # old
 for fun, forever
