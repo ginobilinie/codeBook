@@ -388,6 +388,8 @@ we use stack to help following the rule:
         The first stack stores the current node's left and right child nodes, and pop the top one to the sencond stack,
         which means the 2nd stack acutally stores the reverse order of the post-oreder traverse
 
+181. insertionSortList.cpp: simple linked list process. Pay attention to the head cases. Insertion sort: every time we choose one value (from left to right), and insert it to the proper location in the already-sorted-list. 
+
 # old
 for fun, forever
 
