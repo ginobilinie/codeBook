@@ -400,6 +400,9 @@ we use stack to help following the rule:
 
 186. maxProduct.cpp: Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product. Solution: every time, we maintain the currMax, currMin and hisMax. currMax = max(max(currMax*nums[i],currMin*nums[i]),nums[i]); currMin = min(min(prevMax*nums[i],currMin*nums[i]),nums[i]);
 
+187. findMinInSortedArray.cpp: this one is without duplicate values. bisearch, firt judge if a[left]<a[right], if yes, break; then judge if left or right side is ordered.
+
+
 # old
 for fun, forever
 
