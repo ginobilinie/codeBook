@@ -402,6 +402,7 @@ we use stack to help following the rule:
 
 187. findMinInSortedArray.cpp: this one is without duplicate values. bisearch, firt judge if a[left]<a[right], if yes, break; then judge if left or right side is ordered.
 
+188. findMinInSortedArray.cpp: this one is with duplicate values. bisearch, at each while iteration, we first remove the duplicate values with a while(l<r&&a[l]==a[r])r--, then just follow the 187 but also consider the == cases sepearately.
 
 # old
 for fun, forever
