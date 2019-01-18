@@ -394,7 +394,7 @@ we use stack to help following the rule:
 
 183. evalRPN.cpp: use stack to simulate the post-order traverse.
 
-184. LRUCache.cpp: Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
+184. LRUCache.cpp: Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.  My solution: I'd like to take advantage of the unordered_map<int, int>, I thought unordered_map will keep the original insertion order, and it did keep the insertion order in my visual studio 2010, however, it doesnot keep the order in the OJ platform. I have covered the knowledge for unordered_map and unordered_set, and I got it: if the insertions doesnot break initial size of the unordered_map (unordered_set), then the unodered_map or unordered_set need to rehash, so the insertion order may be broken. 
 
 # old
 for fun, forever
