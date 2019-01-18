@@ -404,7 +404,7 @@ we use stack to help following the rule:
 
 188. findMinInSortedArray.cpp: this one is with duplicate values. bisearch, at each while iteration, we first remove the duplicate values with a while(l<r&&a[l]==a[r])r--, then just follow the 187 but also consider the == cases sepearately.
 
-189. MinStack.cpp: simuate a minimal stack which has an extra function called getMin(). At first, I write a simple implementation with only vector, it cost about 92ms. Then I write another implementation with vector and map, it costs about 28ms.
+189. MinStack.cpp: simuate a minimal stack which has an extra function called getMin(). At first, I write a simple implementation with only vector, it cost about 92ms. Then I write another implementation with vector and map, it costs about 28ms. However, map's insertion is log2N, so we should develop a new datastructure. Since we just need to store the current min togethe with the current push value.
 
 # old
 for fun, forever
