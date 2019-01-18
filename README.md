@@ -394,6 +394,8 @@ we use stack to help following the rule:
 
 183. evalRPN.cpp: use stack to simulate the post-order traverse.
 
+184. LRUCache.cpp: Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
+
 # old
 for fun, forever
 
