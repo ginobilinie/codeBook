@@ -406,7 +406,18 @@ we use stack to help following the rule:
 
 189. MinStack.cpp: simuate a minimal stack which has an extra function called getMin(). At first, I write a simple implementation with only vector, it cost about 92ms. Then I write another implementation in MinStack_faster.cpp with vector and map, it costs about 28ms. However, map's insertion is log2N, so we should develop a new datastructure. Since we just need to store the current min togethe with the current push value. I use pair to implement a vector<pair> data structure in MinStack_pair.cpp.
 	
-190. getIntersectionNode.cpp: while+unordered_map. O(n) time complexity with O(n) extra space complexity. We can also use set to replace unordered_map.
+190. getIntersectionNode.cpp: Write a program to find the node at which the intersection of two singly linked lists begins. while+unordered_map. O(n) time complexity with O(n) extra space complexity. We can also use set to replace unordered_map.
+
+191. getIntersectionNode_noextraspace.cpp: same as 190, but we donot use extra space here. Here we provide a little bit of logic  based method: 
+<pre>Suppose there are two list, listA and listB, the length of these two list is lenA, lenB, and pA and pB point to the head of these two lists respectively.
+Round 1: Assume lenA > lenB, so for the first round pB will point to null first and we have length:
+Round1: lenA - lenB; 0
+Round2: After we point pB to listA, we get:
+Round2: lenA - lenB, lenA
+Round3: And then in this round, pA will point to null first, and we get:
+Round3: lenB, lenB
+Now we know that this round will be the final round since then length of pA and pB is the same and we only need to wait for them to point to the same node if the intersection point exists.
+</pre>
 
 # old
 for fun, forever
