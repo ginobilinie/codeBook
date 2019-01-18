@@ -421,6 +421,7 @@ Now we know that this round will be the final round since then length of pA and 
 
 192. findPeakElement.cpp: stupid, just need a for loop pass.
 
+193. maximumGap_sort.cpp: directly sort and then a for loop pass. If we need to solve it in O(n), then we should not sort it.
 
 # old
 for fun, forever
