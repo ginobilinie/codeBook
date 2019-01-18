@@ -419,6 +419,9 @@ Round3: lenB, lenB
 Now we know that this round will be the final round since then length of pA and pB is the same and we only need to wait for them to point to the same node if the intersection point exists.
 </pre>
 
+192. findPeakElement.cpp: stupid, just need a for loop pass.
+
+
 # old
 for fun, forever
 
