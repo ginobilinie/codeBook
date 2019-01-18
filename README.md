@@ -398,6 +398,8 @@ we use stack to help following the rule:
 
 185. reverseWords.cpp: use stack to help reverse and pay attention to the spaces (use word to preprocess it).
 
+186. maxProduct.cpp: Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product. Solution: every time, we maintain the currMax, currMin and hisMax. currMax = max(max(currMax*nums[i],currMin*nums[i]),nums[i]); currMin = min(min(prevMax*nums[i],currMin*nums[i]),nums[i]);
+
 # old
 for fun, forever
 
