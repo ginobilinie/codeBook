@@ -445,7 +445,9 @@ vector<int> arr: 2, 24, 45, 66, 75, 90, 170, 802
 
 197. convertToTitle.cpp: 26 decimal
 
-198. majorityElement.cpp: I use a unordered_map to record it with a for loop pass (record maxVal and res during scaning).
+198. majorityElement.cpp: Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. Solution: I use a unordered_map to record it with a for loop pass (record maxVal and res during scaning).
+
+199. majorityElement_constantSpace.cpp: same with 198. We donot use extra space to solve it, and this is a very tricky solution: make full use of the definition: "more than n/2 times". We use a variable "val", and "val" records the so-far most frequent value. Other elements counterweigh one time of the current most frequent value, if cnt still >0, then means it is still the most frequent value. cnt==0, means it is not the so-far most frequent value.
 
 # old
 for fun, forever
