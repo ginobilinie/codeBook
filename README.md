@@ -445,7 +445,7 @@ vector<int> arr: 2, 24, 45, 66, 75, 90, 170, 802
 
 197. convertToTitle.cpp: 26 decimal
 
-198. majorityElement.cpp: I use a unordered_map to record it and then use a for loop pass.
+198. majorityElement.cpp: I use a unordered_map to record it with a for loop pass (record maxVal and res during scaning).
 
 # old
 for fun, forever
