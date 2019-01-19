@@ -443,6 +443,8 @@ vector<int> arr: 2, 24, 45, 66, 75, 90, 170, 802
 
 196. twoSum.cpp: sorted array. while loop, l and r pointers.
 
+197. convertToTitle.cpp: 26 decimal
+
 # old
 for fun, forever
 
