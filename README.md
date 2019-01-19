@@ -424,7 +424,8 @@ Now we know that this round will be the final round since then length of pA and 
 193. maximumGap_sort.cpp: directly sort and then a for loop pass. If we need to solve it in O(n), then we should not sort it.
 
 194. radixSort.cpp: 1) Do following for each digit i where i varies from least significant digit to the most significant digit.
-………….a) Sort input array using counting sort (or any stable sort) according to the i’th digit. Here we make it understandable via an example:
+………….a) Sort input array using counting sort (or any stable sort) according to the i’th digit. The time complexity of radix sort is (d*(n)), where d is number of digits for the maximum value.
+Here we make it understandable via an example:
 <pre>
 Original, unsorted list (arr): 170, 45, 75, 90, 802, 24, 2, 66
 Iteraition 1: consider the least significant digit (1st)
@@ -437,6 +438,8 @@ Iteration 3: consider the most significant digit (100st)
 unordered_map<int,vector<int>>: 0: 2, 24, 45, 66, 75, 90; 1:170; 8: 802
 vector<int> arr: 2, 24, 45, 66, 75, 90, 170, 802
 </pre>
+
+195. maximumGap_radixSort.cpp: same problem as 193, but we write radix sort instead.
 
 # old
 for fun, forever
