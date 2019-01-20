@@ -457,6 +457,8 @@ vector<int> arr: 2, 24, 45, 66, 75, 90, 170, 802
 
 203. BSTIterator_norecusive_faster.cpp:  inorder traverse with no recursive function (simulate with only stack) and use vector to records the visited sequence.
 
+204. uniquePathsIII.cpp: go from start to end (obstacles cannot go), and all empty grids should be visited and only visited once.
+
 # old
 for fun, forever
 
