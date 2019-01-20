@@ -449,6 +449,8 @@ vector<int> arr: 2, 24, 45, 66, 75, 90, 170, 802
 
 199. majorityElement_constantSpace.cpp: same with 198. We donot use extra space to solve it, and this is a very tricky solution: make full use of the definition: "more than n/2 times". We use a variable "val", and "val" records the so-far most frequent value. Other elements counterweigh one time of the current most frequent value, if cnt still >0, then means it is still the most frequent value. cnt==0, means it is not the so-far most frequent value.
 
+200. trailingZeroes.cpp: count the number of 5s among [0,n], in the 1st iteration, we count the 1st 5: n/5; in the 2nd iteration, we count the 2nd 5, n/5/5, and ...
+
 # old
 for fun, forever
 
