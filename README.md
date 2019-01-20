@@ -460,6 +460,7 @@ vector<int> arr: 2, 24, 45, 66, 75, 90, 170, 802
 204. uniquePathsIII.cpp: go from start to end (obstacles cannot go), and all empty grids should be visited and only visited once.
 
 205. distributeCoins.cpp: we clean the tree down side to up side, and left side to right side. Actually, it is a postorder traverse.
+I also write a postorder traverse: distributeCoins_postorder.cpp with parent and child nodes as parameters.
 
 # old
 for fun, forever
