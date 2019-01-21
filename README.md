@@ -466,6 +466,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 207. prisonAfterNDays.cpp: There are 8 prison cells in a row, and each cell is either occupied or vacant... Given the initial state of the prison, return the state of the prison after N days (and N such changes described above.). This is a very interesting problem. We have to notice that there are only 6 cells can be changes, so totally 64 possible changes, so if N>64, there must be a circle, so we can do simulation in the first 64 iterations, and find the circleStart and circleEnd, and then we can know where is the circle length. With simple mod operation, we can easily get the answer.
 
+208. isCompleteTree.cpp: In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h. Solution: we search the tree via bfs, and record the first in-complete node, after this first incomplete node, the rest nodes should not have childs, otherwise, it is not complete.
+
 # old
 for fun, forever
 
