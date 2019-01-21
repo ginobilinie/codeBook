@@ -462,6 +462,8 @@ vector<int> arr: 2, 24, 45, 66, 75, 90, 170, 802
 205. distributeCoins.cpp: we clean the tree down side to up side, and left side to right side. Actually, it is a postorder traverse.
 I also write a postorder traverse: distributeCoins_postorder.cpp with parent and child nodes as parameters.
 
+206. flipMatchVoyage.cpp: preorder traverse.  Observation: 1. if root node is not same with the current node in voyage, then we cannot match the voyage via the swap; 2. if root->val is the same with current node in voyage, then we check if left node is same with current node's next one (currInd++), if not, let's swap. 
+
 # old
 for fun, forever
 
