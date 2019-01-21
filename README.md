@@ -470,7 +470,7 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 209. isAlienSorted.cpp: pay attention to correctly understand the problem. unordered_map to stor the sequence.
 
-210. canReorderDoubled.cpp: We have to find whether all the elements can be paired or not. We apply a greedy thought to this problem by sorting the array (otherwise, they may not be able to find the most proper pair, since one element can be paired by \*2 and /2 if possible). And we also use a unordered_map to record the number of elements.
+210. canReorderDoubled.cpp: We have to find whether all the elements can be paired or not. We apply a greedy thought to this problem by sorting the array (otherwise, they may not be able to find the most proper pair, since one element can be paired by \*2 and /2 if possible). And we also use a unordered_map to record the number of elements, if paired, map[key]-- and map[2\*key]-- (map[2/key]--). Pay attention to the map.count function, it will only return 0 or 1. 
 
 # old
 for fun, forever
