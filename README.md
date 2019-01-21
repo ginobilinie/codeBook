@@ -464,6 +464,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 206. flipMatchVoyage.cpp: preorder traverse.  Observation: 1. if root node is not same with the current node in voyage, then we cannot match the voyage via the swap; 2. if root->val is the same with current node in voyage, then we check if left node is same with current node's next one (currInd++), if not, let's swap. 
 
+207. prisonAfterNDays.cpp: There are 8 prison cells in a row, and each cell is either occupied or vacant... Given the initial state of the prison, return the state of the prison after N days (and N such changes described above.). This is a very interesting problem. We have to notice that there are only 6 cells can be changes, so totally 64 possible changes, so if N>64, there must be a circle, so we can do simulation in the first 64 iterations, and find the circleStart and circleEnd, and then we can know where is the circle length. With simple mod operation, we can easily get the answer.
+
 # old
 for fun, forever
 
