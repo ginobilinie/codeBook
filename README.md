@@ -468,6 +468,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 208. isCompleteTree.cpp: In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h. Solution: we search the tree via bfs, and record the first in-complete node, after this first incomplete node, the rest nodes should not have childs, otherwise, it is not complete.
 
+209. isAlienSorted.cpp: pay attention to correctly understand the problem. unordered_map to stor the sequence.
+
 # old
 for fun, forever
 
