@@ -472,6 +472,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 210. canReorderDoubled.cpp: We have to find whether all the elements can be paired or not. We apply a greedy thought to this problem by sorting the array (otherwise, they may not be able to find the most proper pair, since one element can be paired by \*2 and /2 if possible). And we also use a unordered_map to record the number of elements, if paired, map[key]-- and map[2\*key]-- (map[2/key]--). Pay attention to the map.count function, it will only return 0 or 1. 
 
+211. minDeletionSizeII.cpp: Problem: We are given an array A of N lowercase letter strings, all of the same length. Now, we may choose any set of deletion indices, and for each string, we delete all the characters in those indices. Solution: This is not a hard problem, but hard to get accepted because you have to very carefully consider the same char problems. I set up 3 states: 0: prev<curr, 1: prev==curr, 2: prev>curr, after scanning all the words for the current char, if state is 0, then we return the current res since it is ordered for the remaining sequences; if state is 2, we should do res++; if state is 1, which means there are some same chars in some words, in this case, we donot need to remove this char, and we also cannot think the words is well sorted because we have to still consider the same char words. I use a vector to record it, and then continue to consider the unordered words for next chars.
+
 # old
 for fun, forever
 
