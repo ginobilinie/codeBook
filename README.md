@@ -476,6 +476,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 212. tallestBillboard_TLE.cpp: Given a set of numbers, partition them to 3 parts, the first and second part should have the equal sum, and we have to get the maximum equal sum, and the 3 subset can be null and also cannot not null. Brute force: each element can choose to add to s1, s2 or s3(not add), so we can do dfs: max(dfs(s1+curr[i],s2), dfs(s1, s2+curr[i]), dfs(s1,s2))...but it will TLE.
 
+213. lengthOfLIS.cpp: state: dp[i] means the LIS for the current i. consider dp[i+1], then we should compare with all the dp[0], dp[1],...dp[i], and then we can decide dp[i+1].
+
 # old
 for fun, forever
 
