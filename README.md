@@ -474,6 +474,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 211. minDeletionSizeII.cpp: Problem: We are given an array A of N lowercase letter strings, all of the same length. Now, we may choose any set of deletion indices, and for each string, we delete all the characters in those indices. Solution: This is not a hard problem, but hard to get accepted because you have to very carefully consider the same char problems. I set up 3 states: 0: prev<curr, 1: prev==curr, 2: prev>curr, after scanning all the words for the current char, if state is 0, then we return the current res since it is ordered for the remaining sequences; if state is 2, we should do res++; if state is 1, which means there are some same chars in some words, in this case, we donot need to remove this char, and we also cannot think the words is well sorted because we have to still consider the same char words. I use a vector to record it, and then continue to consider the unordered words for next chars.
 
+212. tallestBillboard_TLE.cpp: Given a set of numbers, partition them to 3 parts, the first and second part should have the equal sum, and we have to get the maximum equal sum, and the 3 subset can be null and also cannot not null. Brute force: each element can choose to add to s1, s2 or s3(not add), so we can do dfs: max(dfs(s1+curr[i],s2), dfs(s1, s2+curr[i]), dfs(s1,s2))...but it will TLE.
+
 # old
 for fun, forever
 
