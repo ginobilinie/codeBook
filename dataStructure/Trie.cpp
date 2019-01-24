@@ -29,6 +29,7 @@ public:
             int ind = c - 'a';
             if (p->child[ind]==NULL)
                 return false;
+            p = p->child[ind];
         }
         cout<<"haha"<<endl;
         return p->isWord;
@@ -43,6 +44,7 @@ public:
             int ind = c - 'a';
             if (p->child[ind]==NULL)
                 return false;
+            p = p->child[ind];
         }
         return true;
     }
