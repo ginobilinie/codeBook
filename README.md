@@ -482,6 +482,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 215. findKthLargest.cpp: maintain a k-min-heap with priority_queue
 
+216. Trie.cpp: Define a trieNode: bool isWord (or int count): is it a word from root to the current node, and a 26 (or more) TrieNode* childs[26]....
+
 # old
 for fun, forever
 
