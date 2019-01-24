@@ -480,6 +480,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 214. KthLargest.cpp: Kth Largest Element in a Stream. Solution: use priority_queue to maintain a min-heap, every time, when the heap is full (at maxSz), then we just need to do pop. priority_queue<int, vector<int>, greater<int>> is min-heap, less<int> is max-heap.
 
+215. findKthLargest.cpp: maintain a k-min-heap with priority_queue
+
 # old
 for fun, forever
 
