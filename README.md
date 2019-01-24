@@ -484,6 +484,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 216. Trie.cpp: Define a trieNode: bool isWord (or int count): is it a word from root to the current node, and a 26 (or more) TrieNode* childs[26]....
 
+217. numUniqueEmails.cpp: for loop scan.
+
 # old
 for fun, forever
 
