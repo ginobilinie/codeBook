@@ -478,6 +478,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 213. lengthOfLIS.cpp: state: dp[i] means the LIS for the current i. consider dp[i+1], then we should compare with all the dp[0], dp[1],...dp[i], and then we can decide dp[i+1].
 
+214. KthLargest.cpp: Kth Largest Element in a Stream. Solution: use priority_queue to maintain a min-heap, every time, when the heap is full (at maxSz), then we just need to do pop. priority_queue<int, vector<int>, greater<int>> is min-heap, less<int> is max-heap.
+
 # old
 for fun, forever
 
