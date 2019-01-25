@@ -490,6 +490,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 219. isLongPressedName.cpp: note for the corner cases.
 
+220. minIncrementForUnique.cpp: a intereting problem, similar with balance coin tree problem. We can first use a map to count the numbers. Then we can move the the number to the right neighbor even if the right neighbor is full, and we can for loop to can the map.
+
 # old
 for fun, forever
 
