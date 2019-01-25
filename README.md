@@ -492,6 +492,9 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 220. minIncrementForUnique.cpp: a intereting problem, similar with balance coin tree problem. We can first use a map to count the numbers. Then we can move the the number to the right neighbor even if the right neighbor is full, and we can for loop to can the map.
 
+221. validateStackSequences.cpp: Given two sequences pushed and popped with distinct values, return true if and only if this could have been the result of a sequence of push and pop operations on an initially empty stack. Solution: in a while loop, push all the elements before the current popInd into stack, then we discuss if s.top equals to or not equals to the poped[popInd]. Note, if the s is empty and the vector is not finished, then we should continue to push sth into the stack.
+
+
 # old
 for fun, forever
 
