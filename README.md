@@ -494,6 +494,7 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 221. validateStackSequences.cpp: Given two sequences pushed and popped with distinct values, return true if and only if this could have been the result of a sequence of push and pop operations on an initially empty stack. Solution: in a while loop, push all the elements before the current popInd into stack, then we discuss if s.top equals to or not equals to the poped[popInd]. Note, if the s is empty and the vector is not finished, then we should continue to push sth into the stack.
 
+222. TimeMap_tle.cpp: use unorded_map<key,piroirty_queue<pair<value,int>>> to model the data structure, since I donot know how to do bisearch for priority_queue, so I choose linear search, but it is tle when the sequence is quite long.
 
 # old
 for fun, forever
