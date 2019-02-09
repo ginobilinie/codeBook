@@ -496,6 +496,8 @@ I also write a postorder traverse: distributeCoins_postorder.cpp with parent and
 
 222. TimeMap_tle.cpp: use unorded_map<key,piroirty_queue<pair<value,int>>> to model the data structure, since I donot know how to do bisearch for priority_queue, so I choose linear search, but it is tle when the sequence is quite long.
 
+223. verticalTraversal.cpp: vertical traverse a tree. We use a tuple based set (we have to rewrtie the struct cmp {operator()(const &n1, const &n2) return n1.val<n2.val};) with dfs to store the locations of all elements (loc: x,y,val).
+
 # old
 for fun, forever
 
