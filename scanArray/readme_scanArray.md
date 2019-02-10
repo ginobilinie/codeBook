@@ -1,2 +1,3 @@
 1. subarraysWithKDistinct_tle.cpp: from url: https://leetcode.com/problems/subarrays-with-k-different-integers/
-I use two for-loop to directly solve it by brute force with simple prunning.
+I use two for-loop to directly solve it by brute force with simple prunning, I use a set to count the distinct number of variables. This algorithm TLE.
+2. subarraysWithKDistinct_bruteforce_pass.cpp: The exact same algorithm with 1, but this time it passes. The only differences is that I use a bool used array and a variable distCnt to record the number of distinct numbers. Remember we should open a used array before the for loops and we just reset the values in the first loop. This passes but the 1st tle, and it means that though unordered_set is O(1) insert but it costs more than than our created array. 
