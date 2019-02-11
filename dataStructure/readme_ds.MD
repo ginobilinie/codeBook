@@ -7,3 +7,6 @@ list: https://www.geeksforgeeks.org/list-cpp-stl/
 
 4. MyHashMap_solveCollision.cpp: implement a hash map. I open a smaller array, use hash[hashed_key]={original_key, value}. And we solve the
 key collision with modular and linear functions.
+
+5. findWords.cpp (p212): Problem: Given a 2D board and a list of words from the dictionary, find all words in the board. Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+Solution: Use trie to build the dictionary, and write a dfs to search all possible words with trie's prunning.
