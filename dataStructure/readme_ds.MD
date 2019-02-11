@@ -5,4 +5,5 @@ list: https://www.geeksforgeeks.org/list-cpp-stl/
 
 3. MyHashMap_naive.cpp: problem: implement a hash map. I open a huge array, and then just do the simple remove, put and get.
 
-4.
+4. MyHashMap_solveCollision.cpp: implement a hash map. I open a smaller array, use hash[hashed_key]={original_key, value}. And we solve the
+key collision with modular and linear functions.
