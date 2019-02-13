@@ -35,7 +35,7 @@ public:
         if (dict.count(key))
         {
             mymap.erase({key,dict[key]});
-            dict.erase(key);
+            //dict.erase(key);
             dict[key] = ++currPriority;
             mymap[{key,dict[key]}] = value;
         }
