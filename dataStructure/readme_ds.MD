@@ -10,3 +10,6 @@ key collision with modular and linear functions.
 
 5. findWords.cpp (p212): Problem: Given a 2D board and a list of words from the dictionary, find all words in the board. Each word must be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
 Solution: Use trie to build the dictionary, and write a dfs to search all possible words with trie's prunning.
+
+6. LRUCache_faster.cpp: Implement a LRU cache. 
+My solution: user map<pair<key,priority>,value> and unordered_map<key,priority> to implement it. When we do get, we first use unordered_map to find the priority, and then we find the value according to the priority; when we do put, we first check if it exists by check unordered_map, if existed, we update the priority in unordered_map, and we also update the values in the map by removing the original item and insert new item; if not existed, we have to first check if the map is full or not, if yes, we have to remove the least prority item, and add new item, otherwise, we can directly insert new item.
