@@ -10,4 +10,5 @@ Solution: It's easy to think about the idea, we use two pointers to scan the arr
 problem: Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Return the max sliding window.
 Solution: Remember the last winodw's maxVal and maxId. If the maxId is i-1, then we need to rescan the window beginning from i, otherwise, we just need to compare maxVal and nums[i+k-1].
 
-5.
+5. productExceptSelf.cpp: product except self, with O(n) algorithm and cannot use division. 
+Soltuion: scan from left to right, and then scan from right to left. scan from left to right, prod[i] = prod[i-1]\*nums[i-1]//avoid by nums[i] scan from right to left, prod[i] = prod[i]\*ac, where ac \*=nums[i+1]
