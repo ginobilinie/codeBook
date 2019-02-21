@@ -10,3 +10,6 @@ bigger than 0.
 2. alienOrder.cpp: 
 Problem: given a list of sorted words (the relationship between these words are sorted, instead of chars in the word), and we need to find the correct char-level order.
 Solution: First use neighboring words to build a char order graph (unordered_map<char,vector<char>>, then build a indegree array (unordered_map<char,int>) and develop the topological sorting.
+  
+3. BasicCalculator.cpp: Problem: Implement a basic calculator to evaluate a simple expression string. The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces.
+My solution: use signstack to store the sign and valuestack to store the left value when we encounter the '(', reinitialize res and sign. when we encouter ')', we just pop the stack top and update the res with the top sign and top history value. In other cases, we donot need to use the stack.
