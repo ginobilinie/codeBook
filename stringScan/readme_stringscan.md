@@ -13,3 +13,7 @@ Solution: First use neighboring words to build a char order graph (unordered_map
   
 3. BasicCalculator.cpp: Problem: Implement a basic calculator to evaluate a simple expression string. The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces.
 My solution: use signstack to store the sign and valuestack to store the left value when we encounter the '(', reinitialize res and sign. when we encouter ')', we just pop the stack top and update the res with the top sign and top history value. In other cases, we donot need to use the stack.
+
+4. BasicCalculatorII.cpp: 
+Problem: Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, \*, \/ operators and empty spaces . The integer division should truncate toward zero.
+Solution: Use two queues (signqueue and valqueue) to store the sign and value. When we encouter + or -, we just input to the queue, and when we encoutner a number, then we just check what's current sign is, if + or -, we push into the queue, if * or /, we just do the operation. In the end, we just scan the queue and do the '+' or '-' operations. 
