@@ -24,3 +24,6 @@ Solution: 1. op记录着上一个operation，我们可以在式子左边假设�
           2. 每次遇到s[i]是+-/ or \*，我们处理用op去处理右边的元素，到了最后一个元素的时候，我们用当前存留的op去处理就行。也就是n-1个op处理n个item，然后记得去用s[i]去更新op.
         3. 遇到(，go through直到遇到平衡后的)(也就是要记录左右括号数量，要平衡)，然后调用递归算法。
         这种方法，不用stack，不用queue。但是这种方法设计非常巧妙，我们需要先处理num以及()，最后时刻处理+ - \* / 以及最后一个字符。同时有意不处理空格。
+        
+6. minWindow.cpp: Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+Solution: 从左边往右边扫描。设计一个num记录cover T中字符个数，设计一个hash来记录哪些元素被cover了。当某一个substring能够cover所有T时，我们从左边开始缩减这个substring里不必要的chars，然后拿这个substring去比历史最短。。
