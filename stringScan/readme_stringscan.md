@@ -17,3 +17,10 @@ My solution: use signstack to store the sign and valuestack to store the left va
 4. BasicCalculatorII.cpp: 
 Problem: Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, \*, \/ operators and empty spaces . The integer division should truncate toward zero.
 Solution: Use two queues (signqueue and valqueue) to store the sign and value. When we encouter + or -, we just input to the queue, and when we encoutner a number, then we just check what's current sign is, if + or -, we push into the queue, if * or /, we just do the operation. In the end, we just scan the queue and do the '+' or '-' operations. 
+
+5. BasicCalculatorII.cpp: 
+Problem: 输入一个string，有可能有+-\*/以及括号。写一个计算器函数。
+Solution: 1. op记录着上一个operation，我们可以在式子左边假设一个0+...，所以op开场是'+'
+          2. 每次遇到s[i]是+-/ or \*，我们处理用op去处理右边的元素，到了最后一个元素的时候，我们用当前存留的op去处理就行。也就是n-1个op处理n个item，然后记得去用s[i]去更新op.
+        3. 遇到(，go through直到遇到平衡后的)(也就是要记录左右括号数量，要平衡)，然后调用递归算法。
+        这种方法，不用stack，不用queue。但是这种方法设计非常巧妙，我们需要先处理num以及()，最后时刻处理+ - \* / 以及最后一个字符。同时有意不处理空格。
