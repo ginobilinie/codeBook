@@ -8,3 +8,7 @@ the 2d matrix, and for the current positive item, we have to union the neighbori
       A next question: how we determine the parent-child relationship, in other words, how we know
       they are in a same group? We can check 4 directions, if one point is neighouring to the current visited 
       point, then we make a union operation
+
+3. numIslands2.cpp: once again, we can use union set with path compression to solve this problem:
+        find: O(log(m*n)), union: O(log(m*n)) for each operation
+        When an operatino comes, we check the 4 possible directions, and use union-set to combine the groups.
