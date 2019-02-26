@@ -27,3 +27,6 @@ Solution: 1. op记录着上一个operation，我们可以在式子左边假设�
         
 6. minWindow.cpp: Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 Solution: 从左边往右边扫描。设计一个num记录cover T中字符个数，设计一个hash来记录哪些元素被cover了。当某一个substring能够cover所有T时，我们从左边开始缩减这个substring里不必要的chars，然后拿这个substring去比历史最短。。
+
+7. lengthOfLongestSubstringTwoDistinct_faster.cpp: Given a string s , find the length of the longest substring t  that contains at most 2 distinct characters.
+Solution: 从左往右扫描string，用一个全局map记录当前字符，如果map.size大于2，从记录的left元素开始减去map里的元素，如果某个元素为0了，将该元素从map里去掉。当然，每次记录下当前最大长度。该算法完美用到K个distinct chars上面去。
