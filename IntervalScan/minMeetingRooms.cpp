@@ -23,7 +23,7 @@ public:
     }
     int minMeetingRooms(vector<Interval>& intervals) {
         /*we use a priority_queue to store the current maximum ending time of all necessary meeting conference rooms
-            so we can do it in this way: when a new interval comes, and then we check if the top element of the pq is smaller than the interval's start value or not, if yes, we donot need to add a conference rooms, and we update the ending time of this room; if not, we have to push a new room which is represented by a new ending time.
+           so we can do it in this way: when a new interval comes, and then we check if the top element of the pq is smaller than the interval's start value or not, if yes, we donot need to add a conference rooms, and we update the ending time of this room; if not, we have to push a new room which is represented by a new ending time.
         */
         sort(intervals.begin(),intervals.end(),cmp);
         priority_queue<int,vector<int>,greater<int>> pq;
