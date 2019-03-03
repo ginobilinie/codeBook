@@ -12,3 +12,9 @@ Solution: Remember the last winodw's maxVal and maxId. If the maxId is i-1, then
 
 5. productExceptSelf.cpp: product except self, with O(n) algorithm and cannot use division. 
 Soltuion: scan from left to right, and then scan from right to left. scan from left to right, prod[i] = prod[i-1]\*nums[i-1]//avoid by nums[i] scan from right to left, prod[i] = prod[i]\*ac, where ac \*=nums[i+1]
+
+6. longestOnesWithKchanges.cpp: 
+Problem: There are N piles of stones arranged in a row.  The i-th pile has stones[i] stones.
+A move consists of merging exactly K consecutive piles into one pile, and the cost of this move is equal to the total number of stones in these K piles.
+Find the minimum cost to merge all piles of stones into one pile.  If it is impossible, return -1.
+Solution: use a queue to record the locations of zeros, when the q.size is larger than K, then we compute the current maxLength with i-leftInd and we update leftInd = q.front()+1; then q.pop().
