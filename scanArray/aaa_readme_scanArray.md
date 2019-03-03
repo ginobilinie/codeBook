@@ -18,3 +18,4 @@ Problem: There are N piles of stones arranged in a row.  The i-th pile has stone
 A move consists of merging exactly K consecutive piles into one pile, and the cost of this move is equal to the total number of stones in these K piles.
 Find the minimum cost to merge all piles of stones into one pile.  If it is impossible, return -1.
 Solution: use a queue to record the locations of zeros, when the q.size is larger than K, then we compute the current maxLength with i-leftInd and we update leftInd = q.front()+1; then q.pop().
+solution2: use a window sliding: scan from left to right, and maintain zeroCnt, if zeroCnt>0, update the leftInd with a while loop to keep the zeroCnt<=K, and we can compute res = max(i-leftInd+1,res) at every scan.
