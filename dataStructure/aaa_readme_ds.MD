@@ -16,3 +16,5 @@ My solution: user map<pair<key,priority>,value> and unordered_map<key,priority> 
 
 7. unordered_map<key,val> and map<prio,<key,val>>: Implement LRU cache
 My solution: use unordered_map<key,priority> and map<prio, <key,value>> and to implement it. When we do get, we first use unordered_map to find the priority, and then we find the value according to the priority; when we do put, we first check if it exists by check unordered_map, if existed, we update the priority in unordered_map, and we also update the values in the map by removing the original item and insert new item; if not existed, we have to first check if the map is full or not, if yes, we have to remove the least prority item, and add new item, otherwise, we can directly insert new item.
+
+8. RandomizedSet.set: use unordered_set as the base to simulate the data structure. And then we can do insert or remove in O(1) easily. When we do randomaccess, we need a rand()%myset.size to get the ind, and then we can use advance function to make the iterator to this ind's iterator: advnace(it,ind), and return *\it.
