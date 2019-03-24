@@ -19,3 +19,8 @@ A move consists of merging exactly K consecutive piles into one pile, and the co
 Find the minimum cost to merge all piles of stones into one pile.  If it is impossible, return -1.
 Solution: use a queue to record the locations of zeros, when the q.size is larger than K, then we compute the current maxLength with i-leftInd and we update leftInd = q.front()+1; then q.pop().
 solution2: use a window sliding: scan from left to right, and maintain zeroCnt, if zeroCnt>0, update the leftInd with a while loop to keep the zeroCnt<=K, and we can compute res = max(i-leftInd+1,res) at every scan.
+
+7. maxScoreSightseeingPair.cpp: 
+Problem: Given an array A of positive integers, A[i] represents the value of the i-th sightseeing spot, and two sightseeing spots i and j have distance j - i between them.
+Solution: prevEqualMax is the current max value when we considering counteracting the distance effect: prevEqualMax = max(currVal, prevEqualMax-1); note the prevEqualMax-1 is the one considering counteracting the distance effect
+    Then, we can maintain a maxScore to track the current max value of A[i]+A[j]+i-j
